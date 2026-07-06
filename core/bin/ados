@@ -1,0 +1,45 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+SCRIPT="$(readlink -f "$0")"
+BASE="$(dirname "$(dirname "$(dirname "$SCRIPT")")")"
+
+case "$1" in
+
+""|help)
+    bash "$BASE/core/commands/help.sh"
+    ;;
+
+version)
+    bash "$BASE/core/commands/version.sh"
+    ;;
+
+bootstrap)
+    bash "$BASE/core/commands/bootstrap.sh"
+    ;;
+
+init)
+    bash "$BASE/core/commands/init.sh"
+    ;;
+
+new)
+    bash "$BASE/core/commands/new.sh"
+    ;;
+
+continue)
+    bash "$BASE/core/commands/continue.sh"
+    ;;
+
+doctor)
+    bash "$BASE/core/commands/doctor.sh"
+    ;;
+
+audit)
+    bash "$BASE/core/commands/audit.sh"
+    ;;
+
+*)
+    echo "Unknown command: $1"
+    echo
+    bash "$BASE/core/commands/help.sh"
+    ;;
+esac
