@@ -3,6 +3,8 @@
 SCRIPT="$(readlink -f "$0")"
 BASE="$(dirname "$(dirname "$(dirname "$SCRIPT")")")"
 
+source "$BASE/core/runtime/runtime.sh"
+
 case "$1" in
 
 ""|help)
