@@ -1,0 +1,15 @@
+logs/
+cache/
+tmp/
+workspace/
+*.log
+*.tmp
+*.swp
+*.bak
+.env
+.env.*
+__pycache__/
+*.pyc
+node_modules/
+dist/
+build/
