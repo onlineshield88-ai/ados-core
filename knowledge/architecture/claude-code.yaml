@@ -1,0 +1,12 @@
+repository: claude-code
+capabilities:
+  plugin_system: true
+  agent_system: true
+  command_system: false
+  hook_system: false
+  skill_system: false
+  workflow_system: false
+  runtime_system: true
+  mcp_system: true
+  template_system: false
+  config_system: false

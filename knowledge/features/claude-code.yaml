@@ -1,5 +1,14 @@
-Plugin System: true
-Agent Framework: true
-Runtime Engine: true
-Memory System: false
-MCP Support: true
+plugin: true
+agent: true
+runtime: true
+memory: false
+mcp: true
+plugins: 0
+agents: 0
+commands: 0
+hooks: 0
+skills: 0
+workflow: 0
+template: 0
+config: 0
+repository: claude-code

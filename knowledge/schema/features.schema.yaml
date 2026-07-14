@@ -1,0 +1,16 @@
+repository: string
+
+plugin: bool
+agent: bool
+runtime: bool
+memory: bool
+mcp: bool
+
+plugins: int
+agents: int
+commands: int
+hooks: int
+skills: int
+workflow: int
+template: int
+config: int
