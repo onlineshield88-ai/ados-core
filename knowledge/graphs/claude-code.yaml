@@ -1,0 +1,21 @@
+plugin:
+  plugins: 231
+  commands: 34
+  hooks: 48
+  skills: 89
+  total: 402
+agent:
+  agents: 20
+  prompt: 5
+  total: 25
+runtime:
+  runtime: 0
+  workflow: 14
+  config: 5
+  total: 19
+memory:
+  memory: 0
+  total: 0
+mcp:
+  mcp: 10
+  total: 10

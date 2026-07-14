@@ -1,4 +1,4 @@
-# knowledge
+# decision
 
 Temporary placeholder.
 

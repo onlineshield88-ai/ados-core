@@ -1,4 +1,4 @@
-# knowledge
+# world
 
 Temporary placeholder.
 

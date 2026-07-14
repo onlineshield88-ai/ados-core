@@ -1,0 +1,5 @@
+Plugin System: true
+Agent Framework: true
+Runtime Engine: true
+Memory System: false
+MCP Support: true

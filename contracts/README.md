@@ -1,4 +1,4 @@
-# knowledge
+# contracts
 
 Temporary placeholder.
 

@@ -1,0 +1,14 @@
+name: Open Source AI Goldmine
+repository: https://github.com/Moh4696/open-source-ai-goldmine
+
+type: index
+
+contains:
+  - ai frameworks
+  - coding agents
+  - llm runtimes
+  - research
+
+policy:
+  import_code: false
+  use_as_catalog: true

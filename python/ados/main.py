@@ -1,22 +1,14 @@
-#!/usr/bin/env python3
+import argparse
 
-import sys
+from ados.runtime.doctor import doctor
 
-def banner():
-    print("=" * 40)
-    print("ADOS Python Runtime")
-    print("Version : 0.2.0-alpha")
-    print("=" * 40)
+parser=argparse.ArgumentParser()
 
-def main():
-    banner()
+parser.add_argument("command",nargs="?",default="doctor")
 
-    if len(sys.argv) == 1:
-        print("Usage:")
-        print("  ados workspace scan")
-        return
+args=parser.parse_args()
 
-    print("Arguments:", sys.argv[1:])
-
-if __name__ == "__main__":
-    main()
+if args.command=="doctor":
+    doctor()
+else:
+    print("Unknown command")

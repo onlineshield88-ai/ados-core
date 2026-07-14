@@ -1,0 +1,12 @@
+version: 1
+
+phase: M0
+
+status: bootstrap
+
+engine_status:
+
+knowledge: inactive
+decision: inactive
+execution: inactive
+runtime: inactive

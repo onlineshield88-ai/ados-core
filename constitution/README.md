@@ -1,4 +1,4 @@
-# knowledge
+# constitution
 
 Temporary placeholder.
 

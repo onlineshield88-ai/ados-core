@@ -1,4 +1,4 @@
-# knowledge
+# specs
 
 Temporary placeholder.
 

@@ -1,4 +1,4 @@
-# knowledge
+# memory
 
 Temporary placeholder.
 

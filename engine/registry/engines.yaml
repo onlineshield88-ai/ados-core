@@ -1,0 +1,17 @@
+version: 1
+
+engines:
+
+- knowledge
+- decision
+- execution
+- runtime
+- evolution
+- truth
+- reflection
+- memory
+- genome
+- cost
+- capability
+- audit
+- handover

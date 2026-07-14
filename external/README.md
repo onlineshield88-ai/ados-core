@@ -1,4 +1,4 @@
-# knowledge
+# external
 
 Temporary placeholder.
 

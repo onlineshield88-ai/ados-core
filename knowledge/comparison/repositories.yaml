@@ -1,0 +1,7 @@
+- repository: claude-code
+  plugin: 402
+  agent: 25
+  runtime: 19
+  memory: 0
+  mcp: 10
+  total: 456

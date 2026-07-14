@@ -1,0 +1,19 @@
+name: Claude Code
+repository: https://github.com/anthropics/claude-code
+category: reference
+status: tracked
+
+areas:
+  - cli
+  - command-router
+  - agent-runtime
+  - prompt-system
+  - plugins
+
+import_policy:
+  source_code: forbidden
+  architecture: allowed
+  ideas: allowed
+  documentation: allowed
+
+last_review: pending

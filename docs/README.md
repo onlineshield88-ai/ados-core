@@ -1,4 +1,4 @@
-# knowledge
+# docs
 
 Temporary placeholder.
 
