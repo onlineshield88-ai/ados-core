@@ -1,13 +1,19 @@
 from ados.workspace.workspace import Workspace
 
-def run(args):
 
-    if not args:
+def run(args=None):
+
+    if args is None:
+        args = []
+
+    if len(args) == 0:
         print("workspace commands:")
         print(" scan")
         return
 
-    if args[0] == "scan":
+    cmd = args[0]
+
+    if cmd == "scan":
         Workspace().scan()
         return
 

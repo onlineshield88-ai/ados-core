@@ -1,25 +1,24 @@
-from ados.cli.workspace import run as workspace
-from ados.cli.state import run as state
+import ados.router.bootstrap
 
-COMMANDS = {
-    "workspace": workspace,
-    "state": state,
-}
+from ados.router.registry import (
+    get,
+    all_commands,
+)
 
-def dispatch(argv):
 
-    if len(argv) < 2:
-        print("")
-        print("ADOS Commands")
-        print("")
-        for cmd in sorted(COMMANDS.keys()):
-            print(" ", cmd)
-        return
+def dispatch(command, args):
 
-    command = argv[1]
+    fn = get(command)
 
-    if command not in COMMANDS:
+    if fn is None:
+
         print("Unknown command:", command)
+        print()
+        print("Available commands:")
+
+        for c in all_commands():
+            print(" ", c)
+
         return
 
-    COMMANDS[command](argv[2:])
+    fn(args)

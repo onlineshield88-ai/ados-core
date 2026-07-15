@@ -1,38 +1,35 @@
 import sys
-import subprocess
 
-COMMANDS = {
-    "scan": "./scripts/github-scan.sh",
-    "graph": "./scripts/build-graph.sh",
-    "compare": "./scripts/compare-repositories.sh",
-    "features": "./scripts/features.sh",
-    "extract": "./scripts/extract-knowledge.sh",
-}
+def run(args=None):
 
-def run():
+    if args is None:
+        args=[]
 
-    if len(sys.argv) < 2:
-        print("Usage:")
-        print("research scan <url>")
-        print("research extract")
-        print("research graph")
-        print("research compare")
-        print("research features")
+    if len(args)==0:
+        print("research commands:")
+        print(" scan <url>")
+        print(" extract")
+        print(" graph")
+        print(" compare")
+        print(" features")
         return
 
-    cmd = sys.argv[1]
+    cmd=args[0]
 
-    if cmd == "scan":
+    if cmd=="scan":
+        print("scan repository")
 
-        if len(sys.argv) < 3:
-            print("Repository URL required")
-            return
+    elif cmd=="extract":
+        print("extract knowledge")
 
-        subprocess.run([COMMANDS["scan"], sys.argv[2]])
-        return
+    elif cmd=="graph":
+        print("build graph")
 
-    if cmd in COMMANDS:
-        subprocess.run([COMMANDS[cmd]])
-        return
+    elif cmd=="compare":
+        print("compare repositories")
 
-    print("Unknown command")
+    elif cmd=="features":
+        print("detect features")
+
+    else:
+        print("Unknown research command")
