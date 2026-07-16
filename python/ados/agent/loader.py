@@ -1,5 +1,9 @@
-import pkgutil
 import importlib
+
+MODULES = (
+    "ados.agents.planner",
+    "ados.agents.knowledge",
+)
 
 
 class AgentLoader:
@@ -9,18 +13,8 @@ class AgentLoader:
 
     def load(self):
 
-        import ados.agents
+        for module_name in MODULES:
 
-        for _, module_name, _ in pkgutil.iter_modules(
-            ados.agents.__path__
-        ):
+            module = importlib.import_module(module_name)
 
-            module = importlib.import_module(
-                f"ados.agents.{module_name}"
-            )
-
-            if hasattr(module, "agent"):
-
-                self.manager.register(
-                    module.agent
-                )
+            self.manager.register(module.agent)

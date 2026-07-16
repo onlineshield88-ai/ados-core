@@ -7,7 +7,7 @@ from ados.runtime import (
 )
 
 from ados.capability import CapabilityManager
-from ados.kernel.container import ServiceContainer
+from .container import ServiceContainer
 from ados.tool import ToolRegistry
 
 
