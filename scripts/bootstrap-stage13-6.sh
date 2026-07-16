@@ -1,3 +1,13 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+set -e
+
+echo "======================================"
+echo " ADOS STAGE 13.6"
+echo " Kernel Knowledge Integration"
+echo "======================================"
+
+cat > python/ados/kernel/bootstrap.py <<'PY'
 from .kernel import ADOSKernel
 from ados.repository import RepositoryKnowledge
 
@@ -35,3 +45,11 @@ def shutdown():
 
     global _KERNEL
     _KERNEL = None
+PY
+
+echo
+echo "[1] kernel bootstrap updated"
+echo "[2] repository knowledge integrated"
+
+echo
+echo DONE
