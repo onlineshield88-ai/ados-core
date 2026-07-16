@@ -10,3 +10,4 @@ from .smells import CodeSmellDetector
 from .complexity import ComplexityAnalyzer
 from .maintainability import MaintainabilityAnalyzer
 from .health import RepositoryHealthAnalyzer
+from .technical_debt import TechnicalDebtAnalyzer

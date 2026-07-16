@@ -74,7 +74,16 @@ def initialize(root="."):
         CircularDependencyDetector(k).summary()
     )
 
-    return k
+    
+
+    from ados.reasoning import TechnicalDebtAnalyzer
+
+    k.memory.put(
+        "technical_debt_summary",
+        TechnicalDebtAnalyzer(k).summary()
+    )
+
+return k
 
 
 def shutdown():
