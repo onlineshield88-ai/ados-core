@@ -38,7 +38,42 @@ def initialize(root="."):
         reverse
     )
 
-    return k
+    
+
+from ados.reasoning import (
+    ComplexityAnalyzer,
+    MaintainabilityAnalyzer,
+    DeadCodeDetector,
+    UnusedImportDetector,
+    CircularDependencyDetector,
+)
+
+k.memory.put(
+    "complexity_summary",
+    ComplexityAnalyzer(k).summary()
+)
+
+k.memory.put(
+    "maintainability_summary",
+    MaintainabilityAnalyzer(k).summary()
+)
+
+k.memory.put(
+    "deadcode_summary",
+    DeadCodeDetector(k).summary()
+)
+
+k.memory.put(
+    "unused_imports_summary",
+    UnusedImportDetector(k).summary()
+)
+
+k.memory.put(
+    "cycle_summary",
+    CircularDependencyDetector(k).summary()
+)
+
+return k
 
 
 def shutdown():

@@ -9,3 +9,4 @@ from .unused_imports import UnusedImportDetector
 from .smells import CodeSmellDetector
 from .complexity import ComplexityAnalyzer
 from .maintainability import MaintainabilityAnalyzer
+from .health import RepositoryHealthAnalyzer
