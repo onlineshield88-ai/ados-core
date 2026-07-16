@@ -8,3 +8,4 @@ from .deadcode import DeadCodeDetector
 from .unused_imports import UnusedImportDetector
 from .smells import CodeSmellDetector
 from .complexity import ComplexityAnalyzer
+from .maintainability import MaintainabilityAnalyzer
