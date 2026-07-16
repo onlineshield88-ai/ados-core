@@ -1,1 +1,1 @@
-from .event_bus import bus
+from .container import ServiceContainer
