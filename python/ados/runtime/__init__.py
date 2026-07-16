@@ -6,3 +6,5 @@ from .scheduler import RuntimeScheduler
 from .integration import RuntimeIntegration
 from .objective_runner import ObjectiveRunner
 from .dispatcher import Dispatcher
+
+from .loop import RuntimeLoop
