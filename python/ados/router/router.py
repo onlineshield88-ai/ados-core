@@ -1,24 +1,13 @@
-import ados.router.bootstrap
+class AgentRouter:
 
-from ados.router.registry import (
-    get,
-    all_commands,
-)
+    def __init__(self):
+        self.routes = {}
 
+    def register(self, task_type, agent_name):
+        self.routes[task_type] = agent_name
 
-def dispatch(command, args):
+    def resolve(self, task):
 
-    fn = get(command)
+        t = task.metadata.get("type")
 
-    if fn is None:
-
-        print("Unknown command:", command)
-        print()
-        print("Available commands:")
-
-        for c in all_commands():
-            print(" ", c)
-
-        return
-
-    fn(args)
+        return self.routes.get(t)
