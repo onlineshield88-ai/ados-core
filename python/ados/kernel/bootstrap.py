@@ -6,7 +6,6 @@ _KERNEL = None
 
 
 def kernel():
-
     global _KERNEL
 
     if _KERNEL is None:
@@ -16,7 +15,6 @@ def kernel():
 
 
 def initialize(root="."):
-
     k = kernel()
 
     k.memory.put("status", "running")
@@ -35,11 +33,8 @@ def initialize(root="."):
 
     k.memory.put(
         "reverse_dependency_graph",
-        reverse
+        reverse,
     )
-
-    
-
 
     from ados.reasoning import (
         ComplexityAnalyzer,
@@ -47,46 +42,42 @@ def initialize(root="."):
         DeadCodeDetector,
         UnusedImportDetector,
         CircularDependencyDetector,
+        TechnicalDebtAnalyzer,
     )
 
     k.memory.put(
         "complexity_summary",
-        ComplexityAnalyzer(k).summary()
+        ComplexityAnalyzer(k).summary(),
     )
 
     k.memory.put(
         "maintainability_summary",
-        MaintainabilityAnalyzer(k).summary()
+        MaintainabilityAnalyzer(k).summary(),
     )
 
     k.memory.put(
         "deadcode_summary",
-        DeadCodeDetector(k).summary()
+        DeadCodeDetector(k).summary(),
     )
 
     k.memory.put(
         "unused_imports_summary",
-        UnusedImportDetector(k).summary()
+        UnusedImportDetector(k).summary(),
     )
 
     k.memory.put(
         "cycle_summary",
-        CircularDependencyDetector(k).summary()
+        CircularDependencyDetector(k).summary(),
     )
-
-    
-
-    from ados.reasoning import TechnicalDebtAnalyzer
 
     k.memory.put(
         "technical_debt_summary",
-        TechnicalDebtAnalyzer(k).summary()
+        TechnicalDebtAnalyzer(k).summary(),
     )
 
-return k
+    return k
 
 
 def shutdown():
-
     global _KERNEL
     _KERNEL = None
