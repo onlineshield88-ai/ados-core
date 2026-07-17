@@ -20,6 +20,8 @@ def dispatch(command,args=None):
 
     args=args or []
 
+    ensure_boot()
+
     try:
 
         if command=="workspace":
