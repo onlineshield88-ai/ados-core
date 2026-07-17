@@ -1,4 +1,3 @@
-from ados.kernel.bootstrap import initialize
 class AgentRouter:
 
     def __init__(self):
@@ -50,5 +49,6 @@ __BOOTSTRAPPED=False
 def ensure_boot():
     global __BOOTSTRAPPED
     if not __BOOTSTRAPPED:
+        from ados.kernel.bootstrap import initialize
         initialize(".")
-        __BOOTSTRAPPED=True
+        __BOOTSTRAPPED = True
