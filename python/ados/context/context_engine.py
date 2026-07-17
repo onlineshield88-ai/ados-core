@@ -12,15 +12,16 @@ class ContextEngine:
     def build(self):
         mem = self.k.memory
 
+        dep = mem.get("dependency_graph")
+        rev = mem.get("reverse_dependency_graph")
+
         ctx = {
             "timestamp": datetime.utcnow().isoformat(),
             "workspace": mem.get("workspace"),
             "repository": mem.get("repository"),
             "symbols": len(mem.get("symbols") or {}),
-            "dependency_graph": len(mem.get("dependency_graph") or {}),
-            "reverse_dependency_graph": len(
-                mem.get("reverse_dependency_graph") or {}
-            ),
+            "dependency_graph": dep.size() if dep else 0,
+            "reverse_dependency_graph": rev.size() if rev else 0,
             "cwd": str(Path.cwd()),
         }
 
