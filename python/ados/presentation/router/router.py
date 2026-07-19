@@ -25,19 +25,27 @@ def dispatch(command,args=None):
     try:
 
         if command=="workspace":
-            from ados.cli.workspace import run
+            from ados.presentation.cli.workspace import run
             return run(args)
 
         if command=="doctor":
-            from ados.cli.doctor import run
+            from ados.presentation.cli.doctor import run
             return run(args)
 
         if command=="context":
-            from ados.cli.context import run
+            from ados.presentation.cli.context import run
+            return run(args)
+
+        if command=="search":
+            from ados.presentation.cli.search import run
+            return run(args)
+
+        if command=="index":
+            from ados.presentation.cli.index import run
             return run(args)
 
         if command=="planner":
-            from ados.cli.planner import run
+            from ados.presentation.cli.planner import run
             return run(args)
 
         print(f"Unknown command: {command}")

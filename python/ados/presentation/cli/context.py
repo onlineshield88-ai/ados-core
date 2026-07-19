@@ -1,4 +1,4 @@
-from ados.context import ContextEngine
+from ados.knowledge.context import ContextEngine
 
 
 def run(args=None):

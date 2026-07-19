@@ -1,6 +1,6 @@
 from .kernel import ADOSKernel
-from ados.repository import RepositoryKnowledge
-from ados.graph import ReverseDependencyGraph
+from ados.knowledge.repository import RepositoryKnowledge
+from ados.knowledge.graph import ReverseDependencyGraph
 
 _KERNEL = None
 

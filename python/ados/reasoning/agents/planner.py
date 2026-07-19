@@ -1,5 +1,5 @@
-from ados.agent import Agent
-from ados.task import Task
+from ados.reasoning.agent import Agent
+from ados.execution.task import Task
 
 
 class PlannerAgent(Agent):

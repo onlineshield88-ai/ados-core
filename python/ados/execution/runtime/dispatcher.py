@@ -1,5 +1,5 @@
-from ados.router import AgentRouter
-from ados.agent import AgentManager
+from ados.presentation.router import AgentRouter
+from ados.reasoning.agent import AgentManager
 
 
 class Dispatcher:

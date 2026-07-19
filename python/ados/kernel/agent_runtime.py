@@ -1,5 +1,5 @@
-from ados.agent import AgentManager
-from ados.agent import AgentLoader
+from ados.reasoning.agent import AgentManager
+from ados.reasoning.agent import AgentLoader
 
 
 class AgentRuntime:

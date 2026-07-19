@@ -1,6 +1,6 @@
 import argparse
 
-from ados.router.router import dispatch
+from ados.presentation.router.router import dispatch
 
 parser = argparse.ArgumentParser(
     prog="ados"

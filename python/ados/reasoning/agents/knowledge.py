@@ -1,4 +1,4 @@
-from ados.agent import Agent
+from ados.reasoning.agent import Agent
 
 
 class KnowledgeAgent(Agent):

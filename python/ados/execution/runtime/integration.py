@@ -1,7 +1,7 @@
-from ados.graph import TaskGraph
+from ados.knowledge.graph import TaskGraph
 from ados.queue import TaskQueue
 from ados.resolver import DependencyResolver
-from ados.execution import ExecutionEngine
+from ados.execution.execution import ExecutionEngine
 
 
 class RuntimeIntegration:

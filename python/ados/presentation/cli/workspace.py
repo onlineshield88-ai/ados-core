@@ -1,4 +1,4 @@
-from ados.workspace.workspace import Workspace
+from ados.knowledge.workspace.workspace import Workspace
 
 
 def run(args=None):

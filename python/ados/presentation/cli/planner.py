@@ -1,4 +1,4 @@
-from ados.planner.planner import Planner
+from ados.reasoning.planner.planner import Planner
 
 
 def run(args=None):
