@@ -1,0 +1,4446 @@
+[
+  {
+    "name": "ados_doctor",
+    "file": "ados_doctor.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "os",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "sys",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "openai",
+        "name": "OpenAI",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "compile_ados_repository",
+      "run_diagnosis"
+    ],
+    "docstring": null
+  },
+  {
+    "name": ".audit_knowledge",
+    "file": ".audit_knowledge.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "os",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "sys",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "collections",
+        "name": "defaultdict",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "audit_package"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.test_kernel",
+    "file": "python/test_kernel.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.kernel.kernel",
+        "name": "Kernel",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.events.event",
+        "name": "Event",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.conversation.module",
+        "name": "ConversationModule",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.planner.module",
+        "name": "PlannerModule",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.memory.module",
+        "name": "MemoryModule",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.router.module",
+        "name": "RouterModule",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.providers.local_provider",
+        "name": "LocalProvider",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.validator.module",
+        "name": "ValidatorModule",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.test_provider",
+    "file": "python/test_provider.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.providers.router",
+        "name": "ProviderRouter",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.test_runtime",
+    "file": "python/test_runtime.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.runtime.llama_runtime",
+        "name": "LlamaRuntime",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.test_context",
+    "file": "python/test_context.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.context.builder",
+        "name": "ContextBuilder",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.test_session",
+    "file": "python/test_session.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.session.session",
+        "name": "Session",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.main",
+    "file": "python/ados/main.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.cli.chat",
+        "name": "main",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.kernel.module",
+    "file": "python/ados/core/kernel/module.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "abc",
+        "name": "ABC",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "abc",
+        "name": "abstractmethod",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Module"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.kernel.registry",
+    "file": "python/ados/core/kernel/registry.py",
+    "imports": [],
+    "classes": [
+      "Registry"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.kernel.kernel",
+    "file": "python/ados/core/kernel/kernel.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.kernel.registry",
+        "name": "Registry",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Kernel"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.events.event",
+    "file": "python/ados/core/events/event.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "dataclass",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "field",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Event"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.router.module",
+    "file": "python/ados/core/router/module.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.kernel.module",
+        "name": "Module",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "RouterModule"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.providers.local_provider",
+    "file": "python/ados/core/providers/local_provider.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.kernel.module",
+        "name": "Module",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "LocalProvider"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.providers.base",
+    "file": "python/ados/core/providers/base.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "abc",
+        "name": "ABC",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "abc",
+        "name": "abstractmethod",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Provider"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.providers.router",
+    "file": "python/ados/core/providers/router.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.providers.local.qwen",
+        "name": "QwenProvider",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ProviderRouter"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.providers.local.qwen",
+    "file": "python/ados/core/providers/local/qwen.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.providers.base",
+        "name": "Provider",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.runtime.llama_runtime",
+        "name": "LlamaRuntime",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "QwenProvider"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.conversation.module",
+    "file": "python/ados/core/conversation/module.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.kernel.module",
+        "name": "Module",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ConversationModule"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.planner.module",
+    "file": "python/ados/core/planner/module.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.kernel.module",
+        "name": "Module",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "PlannerModule"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.memory.module",
+    "file": "python/ados/core/memory/module.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.kernel.module",
+        "name": "Module",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "MemoryModule"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.runtime.base",
+    "file": "python/ados/core/runtime/base.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "abc",
+        "name": "ABC",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "abc",
+        "name": "abstractmethod",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Runtime"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.runtime.llama_runtime",
+    "file": "python/ados/core/runtime/llama_runtime.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "json",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "urllib.request",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "urllib.error",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [
+      "LlamaRuntime"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.validator.module",
+    "file": "python/ados/core/validator/module.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.kernel.module",
+        "name": "Module",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ValidatorModule"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.context.builder",
+    "file": "python/ados/core/context/builder.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "subprocess",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ContextBuilder"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.session.session",
+    "file": "python/ados/core/session/session.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "json",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "uuid",
+        "name": "uuid4",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Session"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.engine.kernel",
+    "file": "python/ados/core/engine/kernel.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.context.builder",
+        "name": "ContextBuilder",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.providers.router",
+        "name": "ProviderRouter",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.session.session",
+        "name": "Session",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Kernel"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.brain.base",
+    "file": "python/ados/core/brain/base.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "abc",
+        "name": "ABC",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "abc",
+        "name": "abstractmethod",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Brain"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.brain.pipeline",
+    "file": "python/ados/core/brain/pipeline.py",
+    "imports": [],
+    "classes": [
+      "Pipeline"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.brain.brain",
+    "file": "python/ados/core/brain/brain.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.brain.pipeline",
+        "name": "Pipeline",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.core.brain.stages.load_context",
+        "name": "run",
+        "alias": "context"
+      },
+      {
+        "type": "from",
+        "module": "ados.core.brain.stages.planner",
+        "name": "run",
+        "alias": "planner"
+      },
+      {
+        "type": "from",
+        "module": "ados.core.brain.stages.provider",
+        "name": "run",
+        "alias": "provider"
+      },
+      {
+        "type": "from",
+        "module": "ados.core.brain.stages.review",
+        "name": "run",
+        "alias": "review"
+      }
+    ],
+    "classes": [
+      "ADOSBrain"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.brain.stages.load_context",
+    "file": "python/ados/core/brain/stages/load_context.py",
+    "imports": [],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.brain.stages.planner",
+    "file": "python/ados/core/brain/stages/planner.py",
+    "imports": [],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.brain.stages.provider",
+    "file": "python/ados/core/brain/stages/provider.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.providers.router",
+        "name": "ProviderRouter",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.brain.stages.review",
+    "file": "python/ados/core/brain/stages/review.py",
+    "imports": [],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.project.__init__",
+    "file": "python/ados/core/project/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "scanner",
+        "name": "ProjectScanner",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.core.project.scanner",
+    "file": "python/ados/core/project/scanner.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "subprocess",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ProjectScanner"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.cli.chat",
+    "file": "python/ados/cli/chat.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.brain.brain",
+        "name": "ADOSBrain",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "main"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.cli.scan",
+    "file": "python/ados/cli/scan.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.core.project",
+        "name": "ProjectScanner",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "main"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.cli.index",
+    "file": "python/ados/cli/index.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "sys",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "main"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.cli.search",
+    "file": "python/ados/cli/search.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "sys",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "json",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "main"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.cli.explain",
+    "file": "python/ados/cli/explain.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "sys",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "json",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "main"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.engine.loader",
+    "file": "python/ados/engine/loader.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "EngineLoader"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.state.manager",
+    "file": "python/ados/state/manager.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [
+      "State"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.__init__",
+    "file": "python/ados/knowledge/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "builder",
+        "name": "IndexBuilder",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "loader",
+        "name": "IndexLoader",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "search",
+        "name": "SymbolSearcher",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "explain",
+        "name": "SymbolExplainer",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "scanner",
+        "name": "ProjectScanner",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "function",
+        "name": "FunctionIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "class_index",
+        "name": "ClassIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "module_index",
+        "name": "ModuleIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "import_index",
+        "name": "ImportIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "graph",
+        "name": "DependencyGraph",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.manager",
+    "file": "python/ados/knowledge/manager.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Knowledge"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.types",
+    "file": "python/ados/knowledge/types.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "dataclass",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "field",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Optional",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "FunctionRecord",
+      "ClassRecord",
+      "ModuleRecord",
+      "ImportRecord"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.symbol",
+    "file": "python/ados/knowledge/symbol.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Optional",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "Symbol",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "SymbolType",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "FunctionDef",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "ClassDef",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "SymbolExtractor"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.scanner",
+    "file": "python/ados/knowledge/scanner.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "os",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ProjectScanner"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.parser",
+    "file": "python/ados/knowledge/parser.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Optional",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "FunctionRecord",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "ClassRecord",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "ModuleRecord",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "ImportRecord",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "CodeParser"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.function",
+    "file": "python/ados/knowledge/function.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "parser",
+        "name": "CodeParser",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "FunctionRecord",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "FunctionIndex"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.class_index",
+    "file": "python/ados/knowledge/class_index.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "parser",
+        "name": "CodeParser",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "ClassRecord",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ClassIndex"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.module_index",
+    "file": "python/ados/knowledge/module_index.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "parser",
+        "name": "CodeParser",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "ModuleRecord",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ModuleIndex"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.import_index",
+    "file": "python/ados/knowledge/import_index.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "parser",
+        "name": "CodeParser",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "types",
+        "name": "ImportRecord",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ImportIndex"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.graph",
+    "file": "python/ados/knowledge/graph.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Set",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "json",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [
+      "DependencyGraph"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.storage",
+    "file": "python/ados/knowledge/storage.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "json",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "KnowledgeStorage"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.loader",
+    "file": "python/ados/knowledge/loader.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "json",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "IndexLoader"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.search",
+    "file": "python/ados/knowledge/search.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "loader",
+        "name": "IndexLoader",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "function",
+        "name": "FunctionIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "class_index",
+        "name": "ClassIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "module_index",
+        "name": "ModuleIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "import_index",
+        "name": "ImportIndex",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "SymbolSearcher"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.explain",
+    "file": "python/ados/knowledge/explain.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Optional",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "loader",
+        "name": "IndexLoader",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "SymbolExplainer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.context",
+    "file": "python/ados/knowledge/context.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "loader",
+        "name": "IndexLoader",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ContextBuilder"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.cache",
+    "file": "python/ados/knowledge/cache.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "json",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Optional",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "IndexCache"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.builder",
+    "file": "python/ados/knowledge/builder.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Any",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "scanner",
+        "name": "ProjectScanner",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "function",
+        "name": "FunctionIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "class_index",
+        "name": "ClassIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "module_index",
+        "name": "ModuleIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "import_index",
+        "name": "ImportIndex",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "graph",
+        "name": "DependencyGraph",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "storage",
+        "name": "KnowledgeStorage",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "IndexBuilder"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.dependency_graph",
+    "file": "python/ados/knowledge/dependency_graph.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Set",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "DependencyGraph"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.indexerthon_indexer",
+    "file": "python/ados/knowledge/indexer/python_indexer.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "PythonIndexer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.indexer.__init__",
+    "file": "python/ados/knowledge/indexer/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "indexer",
+        "name": "SourceIndexer",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.indexer.project_index",
+    "file": "python/ados/knowledge/indexer/project_index.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "json",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ProjectIndexer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.indexer.indexer",
+    "file": "python/ados/knowledge/indexer/indexer.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "SourceIndexer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.context.context",
+    "file": "python/ados/knowledge/context/context.py",
+    "imports": [],
+    "classes": [
+      "AgentContext"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.context.__init__",
+    "file": "python/ados/knowledge/context/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "context_engine",
+        "name": "ContextEngine",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.context.context_engine",
+    "file": "python/ados/knowledge/context/context_engine.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "datetime",
+        "name": "datetime",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.kernel.bootstrap",
+        "name": "kernel",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ContextEngine"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.graph.task_graph",
+    "file": "python/ados/knowledge/graph/task_graph.py",
+    "imports": [],
+    "classes": [
+      "TaskGraph"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.graph.__init__",
+    "file": "python/ados/knowledge/graph/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Dict",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "List",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "typing",
+        "name": "Set",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "DependencyGraph"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.graph.dependency_graph",
+    "file": "python/ados/knowledge/graph/dependency_graph.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "collections",
+        "name": "defaultdict",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "DependencyGraph"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.graph.reverse_dependency",
+    "file": "python/ados/knowledge/graph/reverse_dependency.py",
+    "imports": [],
+    "classes": [
+      "ReverseDependencyGraph"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.repository.analyzer",
+    "file": "python/ados/knowledge/repository/analyzer.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "collections",
+        "name": "Counter",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "RepositoryAnalyzer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.repository.__init__",
+    "file": "python/ados/knowledge/repository/__init__.py",
+    "imports": [],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.repository.knowledge",
+    "file": "python/ados/knowledge/repository/knowledge.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.knowledge.workspace",
+        "name": "WorkspaceScanner",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.knowledge.repository",
+        "name": "RepositoryAnalyzer",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.knowledge.indexer",
+        "name": "PythonIndexer",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.knowledge.graph",
+        "name": "DependencyGraph",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.reference",
+        "name": "SymbolReferenceResolver",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "RepositoryKnowledge"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.workspace.workspace",
+    "file": "python/ados/knowledge/workspace/workspace.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "subprocess",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.kernel.config.config",
+        "name": "load_workspace",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Workspace"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.workspace.__init__",
+    "file": "python/ados/knowledge/workspace/__init__.py",
+    "imports": [],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.workspace.scanner",
+    "file": "python/ados/knowledge/workspace/scanner.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "WorkspaceScanner"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.intelligence.framework_detector",
+    "file": "python/ados/knowledge/intelligence/framework_detector.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.intelligence.dependency_detector",
+    "file": "python/ados/knowledge/intelligence/dependency_detector.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.intelligence.architecture",
+    "file": "python/ados/knowledge/intelligence/architecture.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.intelligence.repository",
+    "file": "python/ados/knowledge/intelligence/repository.py",
+    "imports": [],
+    "classes": [
+      "RepositoryIntelligence"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.knowledge.intelligence.__init__",
+    "file": "python/ados/knowledge/intelligence/__init__.py",
+    "imports": [],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.model",
+    "file": "python/ados/research/model.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "dataclass",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Repository"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.scoring",
+    "file": "python/ados/research/scoring.py",
+    "imports": [],
+    "classes": [],
+    "functions": [
+      "score"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.compare",
+    "file": "python/ados/research/compare.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.info",
+    "file": "python/ados/research/info.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "sys",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "providers.github",
+        "name": "Github",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.analyze",
+    "file": "python/ados/research/analyze.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "subprocess",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "shutil",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "os",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "sys",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.extract",
+    "file": "python/ados/research/extract.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.summary",
+    "file": "python/ados/research/summary.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.graph",
+    "file": "python/ados/research/graph.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.comparator",
+    "file": "python/ados/research/comparator.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.features",
+    "file": "python/ados/research/features.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.report",
+    "file": "python/ados/research/report.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.pipeline",
+    "file": "python/ados/research/pipeline.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "subprocess",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "sys",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run",
+      "main"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.normalize_features",
+    "file": "python/ados/research/normalize_features.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.providers.github",
+    "file": "python/ados/research/providers/github.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "requests",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Github"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.research.models.repository",
+    "file": "python/ados/research/models/repository.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "dataclass",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Repository"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.validation.validator",
+    "file": "python/ados/validation/validator.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.event_bus",
+    "file": "python/ados/kernel/event_bus.py",
+    "imports": [],
+    "classes": [
+      "EventBus"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.__init__",
+    "file": "python/ados/kernel/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "bootstrap",
+        "name": "initialize",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "bootstrap",
+        "name": "kernel",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "kernel",
+        "name": "ADOSKernel",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "container",
+        "name": "ServiceContainer",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "agent_runtime",
+        "name": "AgentRuntime",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.test_bus",
+    "file": "python/ados/kernel/test_bus.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.kernel",
+        "name": "bus",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "hello"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.capability",
+    "file": "python/ados/kernel/capability.py",
+    "imports": [],
+    "classes": [],
+    "functions": [
+      "register",
+      "unregister",
+      "get",
+      "providers",
+      "dump"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.bootstrap",
+    "file": "python/ados/kernel/bootstrap.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "kernel",
+        "name": "ADOSKernel",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.knowledge.repository",
+        "name": "RepositoryKnowledge",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.knowledge.graph",
+        "name": "ReverseDependencyGraph",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "kernel",
+      "initialize",
+      "shutdown"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.test_capability",
+    "file": "python/ados/kernel/test_capability.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ados.kernel.bootstrap",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pprint",
+        "name": "pprint",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.kernel.capability",
+        "name": "dump",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.kernel.capability",
+        "name": "providers",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.container",
+    "file": "python/ados/kernel/container.py",
+    "imports": [],
+    "classes": [
+      "ServiceContainer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.kernel",
+    "file": "python/ados/kernel/kernel.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.execution.execution.runtime",
+        "name": "RuntimeContext",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.execution.execution.runtime",
+        "name": "RuntimeSession",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.execution.execution.runtime",
+        "name": "RuntimeMemory",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.execution.execution.runtime",
+        "name": "RuntimeScheduler",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.execution.execution.runtime",
+        "name": "EventBus",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.capability",
+        "name": "CapabilityManager",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "container",
+        "name": "ServiceContainer",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.tool",
+        "name": "ToolRegistry",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ADOSKernel"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.agent_runtime",
+    "file": "python/ados/kernel/agent_runtime.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.reasoning.agent",
+        "name": "AgentManager",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.reasoning.agent",
+        "name": "AgentLoader",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "AgentRuntime"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.core.config",
+    "file": "python/ados/kernel/core/config.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "load_yaml"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.config.config",
+    "file": "python/ados/kernel/config/config.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "load_workspace"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.database.__init__",
+    "file": "python/ados/kernel/database/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "symbol_db",
+        "name": "SymbolDatabase",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.kernel.database.symbol_db",
+    "file": "python/ados/kernel/database/symbol_db.py",
+    "imports": [],
+    "classes": [
+      "SymbolDatabase"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.capability.manager",
+    "file": "python/ados/capability/manager.py",
+    "imports": [],
+    "classes": [
+      "CapabilityManager"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.capability.__init__",
+    "file": "python/ados/capability/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "manager",
+        "name": "CapabilityManager",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.__init__",
+    "file": "python/ados/reasoning/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "reasoner",
+        "name": "CodeReasoner",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "impact",
+        "name": "ChangeImpactAnalyzer",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "impact_propagation",
+        "name": "ImpactPropagationEngine",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "architecture",
+        "name": "ArchitectureAnalyzer",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "cycles",
+        "name": "CircularDependencyDetector",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "review",
+        "name": "RepositoryReviewEngine",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "deadcode",
+        "name": "DeadCodeDetector",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "unused_imports",
+        "name": "UnusedImportDetector",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "smells",
+        "name": "CodeSmellDetector",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "complexity",
+        "name": "ComplexityAnalyzer",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "maintainability",
+        "name": "MaintainabilityAnalyzer",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "health",
+        "name": "RepositoryHealthAnalyzer",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "technical_debt",
+        "name": "TechnicalDebtAnalyzer",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.reasoner",
+    "file": "python/ados/reasoning/reasoner.py",
+    "imports": [],
+    "classes": [
+      "CodeReasoner"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.impact",
+    "file": "python/ados/reasoning/impact.py",
+    "imports": [],
+    "classes": [
+      "ChangeImpactAnalyzer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.impact_propagation",
+    "file": "python/ados/reasoning/impact_propagation.py",
+    "imports": [],
+    "classes": [
+      "ImpactPropagationEngine"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.architecture",
+    "file": "python/ados/reasoning/architecture.py",
+    "imports": [],
+    "classes": [
+      "ArchitectureAnalyzer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.cycles",
+    "file": "python/ados/reasoning/cycles.py",
+    "imports": [],
+    "classes": [
+      "CircularDependencyDetector"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.review",
+    "file": "python/ados/reasoning/review.py",
+    "imports": [],
+    "classes": [
+      "RepositoryReviewEngine"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.deadcode",
+    "file": "python/ados/reasoning/deadcode.py",
+    "imports": [],
+    "classes": [
+      "DeadCodeDetector"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.unused_imports",
+    "file": "python/ados/reasoning/unused_imports.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "UnusedImportDetector"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.smells",
+    "file": "python/ados/reasoning/smells.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "CodeSmellDetector"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.complexity",
+    "file": "python/ados/reasoning/complexity.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ComplexityAnalyzer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.maintainability",
+    "file": "python/ados/reasoning/maintainability.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "math",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "MaintainabilityAnalyzer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.health",
+    "file": "python/ados/reasoning/health.py",
+    "imports": [],
+    "classes": [
+      "RepositoryHealthAnalyzer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.technical_debt",
+    "file": "python/ados/reasoning/technical_debt.py",
+    "imports": [],
+    "classes": [
+      "TechnicalDebtAnalyzer"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.planner.planner",
+    "file": "python/ados/reasoning/planner/planner.py",
+    "imports": [],
+    "classes": [
+      "Planner"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.reflection.__init__",
+    "file": "python/ados/reasoning/reflection/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "reflector",
+        "name": "Reflector",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.reflection.reflector",
+    "file": "python/ados/reasoning/reflection/reflector.py",
+    "imports": [],
+    "classes": [
+      "Reflector"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.objective.objective",
+    "file": "python/ados/reasoning/objective/objective.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "dataclass",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Objective"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.objective.__init__",
+    "file": "python/ados/reasoning/objective/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "objective",
+        "name": "Objective",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.agent.base",
+    "file": "python/ados/reasoning/agent/base.py",
+    "imports": [],
+    "classes": [
+      "Agent"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.agent.registry",
+    "file": "python/ados/reasoning/agent/registry.py",
+    "imports": [],
+    "classes": [
+      "AgentRegistry"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.agent.__init__",
+    "file": "python/ados/reasoning/agent/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "base",
+        "name": "Agent",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "registry",
+        "name": "AgentRegistry",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "manager",
+        "name": "AgentManager",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "loader",
+        "name": "AgentLoader",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.agent.manager",
+    "file": "python/ados/reasoning/agent/manager.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "registry",
+        "name": "AgentRegistry",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "AgentManager"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.agent.loader",
+    "file": "python/ados/reasoning/agent/loader.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "importlib",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [
+      "AgentLoader"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.agents.__init__",
+    "file": "python/ados/reasoning/agents/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "knowledge",
+        "name": "agent",
+        "alias": "knowledge"
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.agents.planner",
+    "file": "python/ados/reasoning/agents/planner.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.reasoning.agent",
+        "name": "Agent",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.execution.task",
+        "name": "Task",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "PlannerAgent"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.agents.knowledge",
+    "file": "python/ados/reasoning/agents/knowledge.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.reasoning.agent",
+        "name": "Agent",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "KnowledgeAgent"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.orchestrator.orchestrator",
+    "file": "python/ados/reasoning/orchestrator/orchestrator.py",
+    "imports": [],
+    "classes": [
+      "Orchestrator"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reasoning.orchestrator.__init__",
+    "file": "python/ados/reasoning/orchestrator/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "orchestrator",
+        "name": "Orchestrator",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.tool.__init__",
+    "file": "python/ados/tool/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "registry",
+        "name": "ToolRegistry",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "executor",
+        "name": "ToolExecutor",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.tool.registry",
+    "file": "python/ados/tool/registry.py",
+    "imports": [],
+    "classes": [
+      "ToolRegistry"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.tool.executor",
+    "file": "python/ados/tool/executor.py",
+    "imports": [],
+    "classes": [
+      "ToolExecutor"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.queue.task_queue",
+    "file": "python/ados/queue/task_queue.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "collections",
+        "name": "deque",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "TaskQueue"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.queue.__init__",
+    "file": "python/ados/queue/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "task_queue",
+        "name": "TaskQueue",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.resolver.dependency",
+    "file": "python/ados/resolver/dependency.py",
+    "imports": [],
+    "classes": [
+      "DependencyResolver"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.resolver.__init__",
+    "file": "python/ados/resolver/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "dependency",
+        "name": "DependencyResolver",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.executor",
+    "file": "python/ados/execution/executor.py",
+    "imports": [],
+    "classes": [
+      "TaskExecutor"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.__init__",
+    "file": "python/ados/execution/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "executor",
+        "name": "TaskExecutor",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "engine",
+        "name": "ExecutionEngine",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.engine",
+    "file": "python/ados/execution/engine.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.execution.execution",
+        "name": "TaskExecutor",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ExecutionEngine"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.__init__",
+    "file": "python/ados/execution/runtime/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "context",
+        "name": "RuntimeContext",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "session",
+        "name": "RuntimeSession",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "memory",
+        "name": "RuntimeMemory",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "events",
+        "name": "EventBus",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "scheduler",
+        "name": "RuntimeScheduler",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "integration",
+        "name": "RuntimeIntegration",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "objective_runner",
+        "name": "ObjectiveRunner",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "dispatcher",
+        "name": "Dispatcher",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "loop",
+        "name": "RuntimeLoop",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.doctor",
+    "file": "python/ados/execution/runtime/doctor.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.engine.loader",
+        "name": "EngineLoader",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.knowledge.manager",
+        "name": "Knowledge",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "doctor"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.context",
+    "file": "python/ados/execution/runtime/context.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "dataclass",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "field",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "RuntimeContext"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.session",
+    "file": "python/ados/execution/runtime/session.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "dataclass",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "field",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "uuid",
+        "name": "uuid4",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "RuntimeSession"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.memory",
+    "file": "python/ados/execution/runtime/memory.py",
+    "imports": [],
+    "classes": [
+      "RuntimeMemory"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.events",
+    "file": "python/ados/execution/runtime/events.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "collections",
+        "name": "defaultdict",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "EventBus"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.scheduler",
+    "file": "python/ados/execution/runtime/scheduler.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "collections",
+        "name": "deque",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "RuntimeScheduler"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.integration",
+    "file": "python/ados/execution/runtime/integration.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.knowledge.graph",
+        "name": "TaskGraph",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.queue",
+        "name": "TaskQueue",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.resolver",
+        "name": "DependencyResolver",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.execution.execution",
+        "name": "ExecutionEngine",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "RuntimeIntegration"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.objective_runner",
+    "file": "python/ados/execution/runtime/objective_runner.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.reasoning.agent",
+        "name": "AgentManager",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.reasoning.agent",
+        "name": "AgentLoader",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.execution.execution.runtime",
+        "name": "RuntimeIntegration",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "ObjectiveRunner"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.dispatcher",
+    "file": "python/ados/execution/runtime/dispatcher.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.presentation.router",
+        "name": "AgentRouter",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.reasoning.agent",
+        "name": "AgentManager",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Dispatcher"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.runtime.loop",
+    "file": "python/ados/execution/runtime/loop.py",
+    "imports": [],
+    "classes": [
+      "RuntimeLoop"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.executor.__init__",
+    "file": "python/ados/execution/executor/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "executor",
+        "name": "Executor",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.executor.executor",
+    "file": "python/ados/execution/executor/executor.py",
+    "imports": [],
+    "classes": [
+      "Executor"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.task.task",
+    "file": "python/ados/execution/task/task.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "dataclass",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "dataclasses",
+        "name": "field",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "Task"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.task.__init__",
+    "file": "python/ados/execution/task/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "task",
+        "name": "Task",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.pipeline.pipeline",
+    "file": "python/ados/execution/pipeline/pipeline.py",
+    "imports": [],
+    "classes": [
+      "AgentPipeline"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.pipeline.__init__",
+    "file": "python/ados/execution/pipeline/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pipeline",
+        "name": "AgentPipeline",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.plugins.loader",
+    "file": "python/ados/execution/plugins/loader.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "PluginLoader"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.workflow.__init__",
+    "file": "python/ados/execution/workflow/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "workflow",
+        "name": "Workflow",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.workflow.workflow",
+    "file": "python/ados/execution/workflow/workflow.py",
+    "imports": [],
+    "classes": [
+      "Workflow"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.integrations.__init__",
+    "file": "python/ados/execution/integrations/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "registry",
+        "name": "IntegrationRegistry",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.execution.integrations.registry",
+    "file": "python/ados/execution/integrations/registry.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "importlib",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "importlib.metadata",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "shutil",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "subprocess",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [
+      "IntegrationRegistry"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reference.resolver",
+    "file": "python/ados/reference/resolver.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "ast",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "SymbolReferenceResolver"
+    ],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.reference.__init__",
+    "file": "python/ados/reference/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "resolver",
+        "name": "SymbolReferenceResolver",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.__init__",
+    "file": "python/ados/presentation/__init__.py",
+    "imports": [],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.cli.workspace",
+    "file": "python/ados/presentation/cli/workspace.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.knowledge.workspace.workspace",
+        "name": "Workspace",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.cli.doctor",
+    "file": "python/ados/presentation/cli/doctor.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.execution.execution.runtime.doctor",
+        "name": "doctor",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.cli.research",
+    "file": "python/ados/presentation/cli/research.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "sys",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.cli.architecture",
+    "file": "python/ados/presentation/cli/architecture.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "subprocess",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.cli.framework",
+    "file": "python/ados/presentation/cli/framework.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "subprocess",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.cli.dependency",
+    "file": "python/ados/presentation/cli/dependency.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "subprocess",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.cli.planner",
+    "file": "python/ados/presentation/cli/planner.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.reasoning.planner.planner",
+        "name": "Planner",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.cli.context",
+    "file": "python/ados/presentation/cli/context.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.knowledge.context",
+        "name": "ContextEngine",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.cli.search",
+    "file": "python/ados/presentation/cli/search.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.knowledge.search.search",
+        "name": "SearchEngine",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.cli.index",
+    "file": "python/ados/presentation/cli/index.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.knowledge.indexer",
+        "name": "SourceIndexer",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "run"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.router.router",
+    "file": "python/ados/presentation/router/router.py",
+    "imports": [],
+    "classes": [
+      "AgentRouter"
+    ],
+    "functions": [
+      "dispatch",
+      "ensure_boot"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.router.__init__",
+    "file": "python/ados/presentation/router/__init__.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "router",
+        "name": "AgentRouter",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.router.registry",
+    "file": "python/ados/presentation/router/registry.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.doctor",
+        "name": "run",
+        "alias": "doctor"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.workspace",
+        "name": "run",
+        "alias": "workspace"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.research",
+        "name": "run",
+        "alias": "research"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.framework",
+        "name": "run",
+        "alias": "framework"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.dependency",
+        "name": "run",
+        "alias": "dependency"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.architecture",
+        "name": "run",
+        "alias": "architecture"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.planner",
+        "name": "run",
+        "alias": "planner"
+      }
+    ],
+    "classes": [],
+    "functions": [
+      "register",
+      "unregister",
+      "get",
+      "all_commands"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.router.bootstrap",
+    "file": "python/ados/presentation/router/bootstrap.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "ados.presentation.router.registry",
+        "name": "register",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.doctor",
+        "name": "run",
+        "alias": "doctor"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.workspace",
+        "name": "run",
+        "alias": "workspace"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.research",
+        "name": "run",
+        "alias": "research"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.architecture",
+        "name": "run",
+        "alias": "architecture"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.framework",
+        "name": "run",
+        "alias": "framework"
+      },
+      {
+        "type": "from",
+        "module": "ados.presentation.cli.dependency",
+        "name": "run",
+        "alias": "dependency"
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "python.ados.presentation.api.fastapi_app",
+    "file": "python/ados/presentation/api/fastapi_app.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "os",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "socket",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "subprocess",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "fastapi",
+        "name": "FastAPI",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "fastapi",
+        "name": "HTTPException",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "pydantic",
+        "name": "BaseModel",
+        "alias": null
+      },
+      {
+        "type": "from",
+        "module": "openai",
+        "name": "OpenAI",
+        "alias": null
+      }
+    ],
+    "classes": [
+      "PseudocodeRequest"
+    ],
+    "functions": [
+      "is_online",
+      "call_openrouter_agent",
+      "execute_ados_pipeline"
+    ],
+    "docstring": null
+  },
+  {
+    "name": "scripts.context-loader",
+    "file": "scripts/context-loader.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "scripts.scan",
+    "file": "scripts/scan.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "scripts.doctor",
+    "file": "scripts/doctor.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "scripts.research",
+    "file": "scripts/research.py",
+    "imports": [
+      {
+        "type": "from",
+        "module": "pathlib",
+        "name": "Path",
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "yaml",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  },
+  {
+    "name": "runtime.environment.detect",
+    "file": "runtime/environment/detect.py",
+    "imports": [
+      {
+        "type": "import",
+        "module": "os",
+        "name": null,
+        "alias": null
+      },
+      {
+        "type": "import",
+        "module": "platform",
+        "name": null,
+        "alias": null
+      }
+    ],
+    "classes": [],
+    "functions": [],
+    "docstring": null
+  }
+]

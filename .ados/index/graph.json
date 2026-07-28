@@ -1,0 +1,657 @@
+{
+  "modules": {
+    "ados_doctor": [
+      "os",
+      "sys",
+      "openai"
+    ],
+    ".audit_knowledge": [
+      "os",
+      "sys",
+      "ast",
+      "pathlib",
+      "collections"
+    ],
+    "python.test_kernel": [
+      "ados.core.kernel.kernel",
+      "ados.core.events.event",
+      "ados.core.conversation.module",
+      "ados.core.planner.module",
+      "ados.core.memory.module",
+      "ados.core.router.module",
+      "ados.core.providers.local_provider",
+      "ados.core.validator.module"
+    ],
+    "python.test_provider": [
+      "ados.core.providers.router"
+    ],
+    "python.test_runtime": [
+      "ados.core.runtime.llama_runtime"
+    ],
+    "python.test_context": [
+      "ados.core.context.builder"
+    ],
+    "python.test_session": [
+      "ados.core.session.session"
+    ],
+    "python.ados.main": [
+      "ados.cli.chat"
+    ],
+    "python.ados.core.kernel.module": [
+      "abc"
+    ],
+    "python.ados.core.kernel.kernel": [
+      "ados.core.kernel.registry"
+    ],
+    "python.ados.core.events.event": [
+      "dataclasses",
+      "typing"
+    ],
+    "python.ados.core.router.module": [
+      "ados.core.kernel.module"
+    ],
+    "python.ados.core.providers.local_provider": [
+      "ados.core.kernel.module"
+    ],
+    "python.ados.core.providers.base": [
+      "abc"
+    ],
+    "python.ados.core.providers.router": [
+      "ados.core.providers.local.qwen"
+    ],
+    "python.ados.core.providers.local.qwen": [
+      "ados.core.providers.base",
+      "ados.core.runtime.llama_runtime"
+    ],
+    "python.ados.core.conversation.module": [
+      "ados.core.kernel.module"
+    ],
+    "python.ados.core.planner.module": [
+      "ados.core.kernel.module"
+    ],
+    "python.ados.core.memory.module": [
+      "ados.core.kernel.module"
+    ],
+    "python.ados.core.runtime.base": [
+      "abc"
+    ],
+    "python.ados.core.runtime.llama_runtime": [
+      "json",
+      "urllib.request",
+      "urllib.error"
+    ],
+    "python.ados.core.validator.module": [
+      "ados.core.kernel.module"
+    ],
+    "python.ados.core.context.builder": [
+      "pathlib",
+      "subprocess"
+    ],
+    "python.ados.core.session.session": [
+      "json",
+      "pathlib",
+      "uuid"
+    ],
+    "python.ados.core.engine.kernel": [
+      "ados.core.context.builder",
+      "ados.core.providers.router",
+      "ados.core.session.session"
+    ],
+    "python.ados.core.brain.base": [
+      "abc"
+    ],
+    "python.ados.core.brain.brain": [
+      "ados.core.brain.pipeline",
+      "ados.core.brain.stages.load_context",
+      "ados.core.brain.stages.planner",
+      "ados.core.brain.stages.provider",
+      "ados.core.brain.stages.review"
+    ],
+    "python.ados.core.brain.stages.provider": [
+      "ados.core.providers.router"
+    ],
+    "python.ados.core.project.__init__": [
+      "scanner"
+    ],
+    "python.ados.core.project.scanner": [
+      "pathlib",
+      "subprocess"
+    ],
+    "python.ados.cli.chat": [
+      "ados.core.brain.brain"
+    ],
+    "python.ados.cli.scan": [
+      "ados.core.project"
+    ],
+    "python.ados.cli.index": [
+      "sys",
+      "pathlib"
+    ],
+    "python.ados.cli.search": [
+      "sys",
+      "json",
+      "pathlib"
+    ],
+    "python.ados.cli.explain": [
+      "sys",
+      "json",
+      "pathlib"
+    ],
+    "python.ados.engine.loader": [
+      "yaml",
+      "pathlib"
+    ],
+    "python.ados.state.manager": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.knowledge.__init__": [
+      "builder",
+      "loader",
+      "search",
+      "explain",
+      "scanner",
+      "function",
+      "class_index",
+      "module_index",
+      "import_index",
+      "graph"
+    ],
+    "python.ados.knowledge.manager": [
+      "pathlib"
+    ],
+    "python.ados.knowledge.types": [
+      "dataclasses",
+      "typing"
+    ],
+    "python.ados.knowledge.symbol": [
+      "ast",
+      "typing",
+      "types"
+    ],
+    "python.ados.knowledge.scanner": [
+      "os",
+      "pathlib",
+      "typing"
+    ],
+    "python.ados.knowledge.parser": [
+      "ast",
+      "typing",
+      "types"
+    ],
+    "python.ados.knowledge.function": [
+      "typing",
+      "parser",
+      "types"
+    ],
+    "python.ados.knowledge.class_index": [
+      "typing",
+      "parser",
+      "types"
+    ],
+    "python.ados.knowledge.module_index": [
+      "typing",
+      "parser",
+      "types"
+    ],
+    "python.ados.knowledge.import_index": [
+      "typing",
+      "parser",
+      "types"
+    ],
+    "python.ados.knowledge.graph": [
+      "typing",
+      "json"
+    ],
+    "python.ados.knowledge.storage": [
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "python.ados.knowledge.loader": [
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "python.ados.knowledge.search": [
+      "typing",
+      "loader",
+      "function",
+      "class_index",
+      "module_index",
+      "import_index"
+    ],
+    "python.ados.knowledge.explain": [
+      "typing",
+      "loader"
+    ],
+    "python.ados.knowledge.context": [
+      "typing",
+      "loader"
+    ],
+    "python.ados.knowledge.cache": [
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "python.ados.knowledge.builder": [
+      "pathlib",
+      "typing",
+      "scanner",
+      "function",
+      "class_index",
+      "module_index",
+      "import_index",
+      "graph",
+      "storage"
+    ],
+    "python.ados.knowledge.dependency_graph": [
+      "typing"
+    ],
+    "python.ados.knowledge.indexerthon_indexer": [
+      "ast",
+      "pathlib"
+    ],
+    "python.ados.knowledge.indexer.__init__": [
+      "indexer"
+    ],
+    "python.ados.knowledge.indexer.project_index": [
+      "ast",
+      "json",
+      "pathlib"
+    ],
+    "python.ados.knowledge.indexer.indexer": [
+      "pathlib"
+    ],
+    "python.ados.knowledge.context.__init__": [
+      "context_engine"
+    ],
+    "python.ados.knowledge.context.context_engine": [
+      "pathlib",
+      "datetime",
+      "ados.kernel.bootstrap"
+    ],
+    "python.ados.knowledge.graph.__init__": [
+      "typing"
+    ],
+    "python.ados.knowledge.graph.dependency_graph": [
+      "ast",
+      "pathlib",
+      "collections"
+    ],
+    "python.ados.knowledge.repository.analyzer": [
+      "pathlib",
+      "collections"
+    ],
+    "python.ados.knowledge.repository.knowledge": [
+      "ados.knowledge.workspace",
+      "ados.knowledge.repository",
+      "ados.knowledge.indexer",
+      "ados.knowledge.graph",
+      "ados.reference"
+    ],
+    "python.ados.knowledge.workspace.workspace": [
+      "pathlib",
+      "subprocess",
+      "ados.kernel.config.config"
+    ],
+    "python.ados.knowledge.workspace.scanner": [
+      "pathlib"
+    ],
+    "python.ados.knowledge.intelligence.framework_detector": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.knowledge.intelligence.dependency_detector": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.knowledge.intelligence.architecture": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.research.model": [
+      "dataclasses"
+    ],
+    "python.ados.research.compare": [
+      "yaml",
+      "pathlib"
+    ],
+    "python.ados.research.info": [
+      "sys",
+      "providers.github"
+    ],
+    "python.ados.research.analyze": [
+      "pathlib",
+      "subprocess",
+      "shutil",
+      "yaml",
+      "os",
+      "sys"
+    ],
+    "python.ados.research.extract": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.research.summary": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.research.graph": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.research.comparator": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.research.features": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.research.report": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.research.pipeline": [
+      "subprocess",
+      "sys"
+    ],
+    "python.ados.research.normalize_features": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.research.providers.github": [
+      "requests"
+    ],
+    "python.ados.research.models.repository": [
+      "dataclasses"
+    ],
+    "python.ados.validation.validator": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.kernel.__init__": [
+      "bootstrap",
+      "kernel",
+      "container",
+      "agent_runtime"
+    ],
+    "python.ados.kernel.test_bus": [
+      "ados.kernel"
+    ],
+    "python.ados.kernel.bootstrap": [
+      "kernel",
+      "ados.knowledge.repository",
+      "ados.knowledge.graph"
+    ],
+    "python.ados.kernel.test_capability": [
+      "ados.kernel.bootstrap",
+      "pprint",
+      "ados.kernel.capability"
+    ],
+    "python.ados.kernel.kernel": [
+      "ados.execution.execution.runtime",
+      "ados.capability",
+      "container",
+      "ados.tool"
+    ],
+    "python.ados.kernel.agent_runtime": [
+      "ados.reasoning.agent"
+    ],
+    "python.ados.kernel.core.config": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.kernel.config.config": [
+      "pathlib",
+      "yaml"
+    ],
+    "python.ados.kernel.database.__init__": [
+      "symbol_db"
+    ],
+    "python.ados.capability.__init__": [
+      "manager"
+    ],
+    "python.ados.reasoning.__init__": [
+      "reasoner",
+      "impact",
+      "impact_propagation",
+      "architecture",
+      "cycles",
+      "review",
+      "deadcode",
+      "unused_imports",
+      "smells",
+      "complexity",
+      "maintainability",
+      "health",
+      "technical_debt"
+    ],
+    "python.ados.reasoning.unused_imports": [
+      "ast",
+      "pathlib"
+    ],
+    "python.ados.reasoning.smells": [
+      "ast",
+      "pathlib"
+    ],
+    "python.ados.reasoning.complexity": [
+      "ast",
+      "pathlib"
+    ],
+    "python.ados.reasoning.maintainability": [
+      "ast",
+      "math",
+      "pathlib"
+    ],
+    "python.ados.reasoning.reflection.__init__": [
+      "reflector"
+    ],
+    "python.ados.reasoning.objective.objective": [
+      "dataclasses"
+    ],
+    "python.ados.reasoning.objective.__init__": [
+      "objective"
+    ],
+    "python.ados.reasoning.agent.__init__": [
+      "base",
+      "registry",
+      "manager",
+      "loader"
+    ],
+    "python.ados.reasoning.agent.manager": [
+      "registry"
+    ],
+    "python.ados.reasoning.agent.loader": [
+      "importlib"
+    ],
+    "python.ados.reasoning.agents.__init__": [
+      "knowledge"
+    ],
+    "python.ados.reasoning.agents.planner": [
+      "ados.reasoning.agent",
+      "ados.execution.task"
+    ],
+    "python.ados.reasoning.agents.knowledge": [
+      "ados.reasoning.agent"
+    ],
+    "python.ados.reasoning.orchestrator.__init__": [
+      "orchestrator"
+    ],
+    "python.ados.tool.__init__": [
+      "registry",
+      "executor"
+    ],
+    "python.ados.queue.task_queue": [
+      "collections"
+    ],
+    "python.ados.queue.__init__": [
+      "task_queue"
+    ],
+    "python.ados.resolver.__init__": [
+      "dependency"
+    ],
+    "python.ados.execution.__init__": [
+      "executor",
+      "engine"
+    ],
+    "python.ados.execution.engine": [
+      "ados.execution.execution"
+    ],
+    "python.ados.execution.runtime.__init__": [
+      "context",
+      "session",
+      "memory",
+      "events",
+      "scheduler",
+      "integration",
+      "objective_runner",
+      "dispatcher",
+      "loop"
+    ],
+    "python.ados.execution.runtime.doctor": [
+      "ados.engine.loader",
+      "ados.knowledge.manager"
+    ],
+    "python.ados.execution.runtime.context": [
+      "dataclasses"
+    ],
+    "python.ados.execution.runtime.session": [
+      "dataclasses",
+      "uuid"
+    ],
+    "python.ados.execution.runtime.events": [
+      "collections"
+    ],
+    "python.ados.execution.runtime.scheduler": [
+      "collections"
+    ],
+    "python.ados.execution.runtime.integration": [
+      "ados.knowledge.graph",
+      "ados.queue",
+      "ados.resolver",
+      "ados.execution.execution"
+    ],
+    "python.ados.execution.runtime.objective_runner": [
+      "ados.reasoning.agent",
+      "ados.execution.execution.runtime"
+    ],
+    "python.ados.execution.runtime.dispatcher": [
+      "ados.presentation.router",
+      "ados.reasoning.agent"
+    ],
+    "python.ados.execution.executor.__init__": [
+      "executor"
+    ],
+    "python.ados.execution.task.task": [
+      "dataclasses"
+    ],
+    "python.ados.execution.task.__init__": [
+      "task"
+    ],
+    "python.ados.execution.pipeline.__init__": [
+      "pipeline"
+    ],
+    "python.ados.execution.plugins.loader": [
+      "pathlib"
+    ],
+    "python.ados.execution.workflow.__init__": [
+      "workflow"
+    ],
+    "python.ados.execution.integrations.__init__": [
+      "registry"
+    ],
+    "python.ados.execution.integrations.registry": [
+      "importlib",
+      "importlib.metadata",
+      "shutil",
+      "subprocess"
+    ],
+    "python.ados.reference.resolver": [
+      "ast",
+      "pathlib"
+    ],
+    "python.ados.reference.__init__": [
+      "resolver"
+    ],
+    "python.ados.presentation.cli.workspace": [
+      "ados.knowledge.workspace.workspace"
+    ],
+    "python.ados.presentation.cli.doctor": [
+      "ados.execution.execution.runtime.doctor"
+    ],
+    "python.ados.presentation.cli.research": [
+      "sys"
+    ],
+    "python.ados.presentation.cli.architecture": [
+      "subprocess"
+    ],
+    "python.ados.presentation.cli.framework": [
+      "subprocess"
+    ],
+    "python.ados.presentation.cli.dependency": [
+      "subprocess"
+    ],
+    "python.ados.presentation.cli.planner": [
+      "ados.reasoning.planner.planner"
+    ],
+    "python.ados.presentation.cli.context": [
+      "ados.knowledge.context"
+    ],
+    "python.ados.presentation.cli.search": [
+      "ados.knowledge.search.search"
+    ],
+    "python.ados.presentation.cli.index": [
+      "ados.knowledge.indexer"
+    ],
+    "python.ados.presentation.router.__init__": [
+      "router"
+    ],
+    "python.ados.presentation.router.registry": [
+      "ados.presentation.cli.doctor",
+      "ados.presentation.cli.workspace",
+      "ados.presentation.cli.research",
+      "ados.presentation.cli.framework",
+      "ados.presentation.cli.dependency",
+      "ados.presentation.cli.architecture",
+      "ados.presentation.cli.planner"
+    ],
+    "python.ados.presentation.router.bootstrap": [
+      "ados.presentation.router.registry",
+      "ados.presentation.cli.doctor",
+      "ados.presentation.cli.workspace",
+      "ados.presentation.cli.research",
+      "ados.presentation.cli.architecture",
+      "ados.presentation.cli.framework",
+      "ados.presentation.cli.dependency"
+    ],
+    "python.ados.presentation.api.fastapi_app": [
+      "os",
+      "socket",
+      "subprocess",
+      "fastapi",
+      "pydantic",
+      "openai"
+    ],
+    "scripts.context-loader": [
+      "pathlib"
+    ],
+    "scripts.scan": [
+      "pathlib"
+    ],
+    "scripts.doctor": [
+      "pathlib"
+    ],
+    "scripts.research": [
+      "pathlib",
+      "yaml"
+    ],
+    "runtime.environment.detect": [
+      "os",
+      "platform"
+    ]
+  },
+  "classes": {},
+  "functions": {}
+}

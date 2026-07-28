@@ -1,0 +1,15 @@
+python/ados/cli/index.py:10:    from ados.knowledge import IndexBuilder
+python/ados/cli/search.py:16:    from ados.knowledge import IndexLoader, SymbolSearcher
+python/ados/cli/explain.py:16:    from ados.knowledge import IndexLoader, SymbolExplainer
+python/ados/knowledge/repository/knowledge.py:1:from ados.knowledge.workspace import WorkspaceScanner
+python/ados/knowledge/repository/knowledge.py:2:from ados.knowledge.repository import RepositoryAnalyzer
+python/ados/knowledge/repository/knowledge.py:3:from ados.knowledge.indexer import PythonIndexer
+python/ados/knowledge/repository/knowledge.py:4:from ados.knowledge.graph import DependencyGraph
+python/ados/kernel/bootstrap.py:2:from ados.knowledge.repository import RepositoryKnowledge
+python/ados/kernel/bootstrap.py:3:from ados.knowledge.graph import ReverseDependencyGraph
+python/ados/execution/runtime/doctor.py:2:from ados.knowledge.manager import Knowledge
+python/ados/execution/runtime/integration.py:1:from ados.knowledge.graph import TaskGraph
+python/ados/presentation/cli/workspace.py:1:from ados.knowledge.workspace.workspace import Workspace
+python/ados/presentation/cli/context.py:1:from ados.knowledge.context import ContextEngine
+python/ados/presentation/cli/search.py:1:from ados.knowledge.search.search import SearchEngine
+python/ados/presentation/cli/index.py:1:from ados.knowledge.indexer import SourceIndexer

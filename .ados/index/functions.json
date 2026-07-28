@@ -1,0 +1,5701 @@
+[
+  {
+    "key": "ados_doctor.compile_ados_repository",
+    "name": "compile_ados_repository",
+    "module": "ados_doctor",
+    "file": "ados_doctor.py",
+    "line": 5,
+    "args": [],
+    "return_annotation": null,
+    "docstring": "Mengompilasi peta pohon folder dan ringkasan berkas ados-core",
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "ados_doctor.run_diagnosis",
+    "name": "run_diagnosis",
+    "module": "ados_doctor",
+    "file": "ados_doctor.py",
+    "line": 36,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": ".audit_knowledge.audit_package",
+    "name": "audit_package",
+    "module": ".audit_knowledge",
+    "file": ".audit_knowledge.py",
+    "line": 7,
+    "args": [
+      "package_path"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.core.kernel.module.Module.supports",
+    "name": "supports",
+    "module": "python.ados.core.kernel.module",
+    "file": "python/ados/core/kernel/module.py",
+    "line": 9,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [
+      "abstractmethod"
+    ],
+    "is_async": false,
+    "parent_class": "Module"
+  },
+  {
+    "key": "python.ados.core.kernel.module.Module.handle",
+    "name": "handle",
+    "module": "python.ados.core.kernel.module",
+    "file": "python/ados/core/kernel/module.py",
+    "line": 13,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [
+      "abstractmethod"
+    ],
+    "is_async": false,
+    "parent_class": "Module"
+  },
+  {
+    "key": "python.ados.core.kernel.registry.Registry.__init__",
+    "name": "__init__",
+    "module": "python.ados.core.kernel.registry",
+    "file": "python/ados/core/kernel/registry.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Registry"
+  },
+  {
+    "key": "python.ados.core.kernel.registry.Registry.register",
+    "name": "register",
+    "module": "python.ados.core.kernel.registry",
+    "file": "python/ados/core/kernel/registry.py",
+    "line": 6,
+    "args": [
+      "self",
+      "module"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Registry"
+  },
+  {
+    "key": "python.ados.core.kernel.registry.Registry.get_modules",
+    "name": "get_modules",
+    "module": "python.ados.core.kernel.registry",
+    "file": "python/ados/core/kernel/registry.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Registry"
+  },
+  {
+    "key": "python.ados.core.kernel.kernel.Kernel.__init__",
+    "name": "__init__",
+    "module": "python.ados.core.kernel.kernel",
+    "file": "python/ados/core/kernel/kernel.py",
+    "line": 5,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Kernel"
+  },
+  {
+    "key": "python.ados.core.kernel.kernel.Kernel.register",
+    "name": "register",
+    "module": "python.ados.core.kernel.kernel",
+    "file": "python/ados/core/kernel/kernel.py",
+    "line": 8,
+    "args": [
+      "self",
+      "module"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Kernel"
+  },
+  {
+    "key": "python.ados.core.kernel.kernel.Kernel.dispatch",
+    "name": "dispatch",
+    "module": "python.ados.core.kernel.kernel",
+    "file": "python/ados/core/kernel/kernel.py",
+    "line": 11,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Kernel"
+  },
+  {
+    "key": "python.ados.core.router.module.RouterModule.supports",
+    "name": "supports",
+    "module": "python.ados.core.router.module",
+    "file": "python/ados/core/router/module.py",
+    "line": 9,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RouterModule"
+  },
+  {
+    "key": "python.ados.core.router.module.RouterModule.handle",
+    "name": "handle",
+    "module": "python.ados.core.router.module",
+    "file": "python/ados/core/router/module.py",
+    "line": 12,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RouterModule"
+  },
+  {
+    "key": "python.ados.core.providers.local_provider.LocalProvider.supports",
+    "name": "supports",
+    "module": "python.ados.core.providers.local_provider",
+    "file": "python/ados/core/providers/local_provider.py",
+    "line": 9,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "LocalProvider"
+  },
+  {
+    "key": "python.ados.core.providers.local_provider.LocalProvider.handle",
+    "name": "handle",
+    "module": "python.ados.core.providers.local_provider",
+    "file": "python/ados/core/providers/local_provider.py",
+    "line": 12,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "LocalProvider"
+  },
+  {
+    "key": "python.ados.core.providers.base.Provider.available",
+    "name": "available",
+    "module": "python.ados.core.providers.base",
+    "file": "python/ados/core/providers/base.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [
+      "abstractmethod"
+    ],
+    "is_async": false,
+    "parent_class": "Provider"
+  },
+  {
+    "key": "python.ados.core.providers.base.Provider.generate",
+    "name": "generate",
+    "module": "python.ados.core.providers.base",
+    "file": "python/ados/core/providers/base.py",
+    "line": 14,
+    "args": [
+      "self",
+      "prompt"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [
+      "abstractmethod"
+    ],
+    "is_async": false,
+    "parent_class": "Provider"
+  },
+  {
+    "key": "python.ados.core.providers.router.ProviderRouter.__init__",
+    "name": "__init__",
+    "module": "python.ados.core.providers.router",
+    "file": "python/ados/core/providers/router.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProviderRouter"
+  },
+  {
+    "key": "python.ados.core.providers.router.ProviderRouter.select",
+    "name": "select",
+    "module": "python.ados.core.providers.router",
+    "file": "python/ados/core/providers/router.py",
+    "line": 11,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProviderRouter"
+  },
+  {
+    "key": "python.ados.core.providers.local.qwen.QwenProvider.__init__",
+    "name": "__init__",
+    "module": "python.ados.core.providers.local.qwen",
+    "file": "python/ados/core/providers/local/qwen.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "QwenProvider"
+  },
+  {
+    "key": "python.ados.core.providers.local.qwen.QwenProvider.available",
+    "name": "available",
+    "module": "python.ados.core.providers.local.qwen",
+    "file": "python/ados/core/providers/local/qwen.py",
+    "line": 13,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "QwenProvider"
+  },
+  {
+    "key": "python.ados.core.providers.local.qwen.QwenProvider.generate",
+    "name": "generate",
+    "module": "python.ados.core.providers.local.qwen",
+    "file": "python/ados/core/providers/local/qwen.py",
+    "line": 16,
+    "args": [
+      "self",
+      "prompt"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "QwenProvider"
+  },
+  {
+    "key": "python.ados.core.conversation.module.ConversationModule.supports",
+    "name": "supports",
+    "module": "python.ados.core.conversation.module",
+    "file": "python/ados/core/conversation/module.py",
+    "line": 9,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ConversationModule"
+  },
+  {
+    "key": "python.ados.core.conversation.module.ConversationModule.handle",
+    "name": "handle",
+    "module": "python.ados.core.conversation.module",
+    "file": "python/ados/core/conversation/module.py",
+    "line": 12,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ConversationModule"
+  },
+  {
+    "key": "python.ados.core.planner.module.PlannerModule.supports",
+    "name": "supports",
+    "module": "python.ados.core.planner.module",
+    "file": "python/ados/core/planner/module.py",
+    "line": 9,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "PlannerModule"
+  },
+  {
+    "key": "python.ados.core.planner.module.PlannerModule.handle",
+    "name": "handle",
+    "module": "python.ados.core.planner.module",
+    "file": "python/ados/core/planner/module.py",
+    "line": 12,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "PlannerModule"
+  },
+  {
+    "key": "python.ados.core.memory.module.MemoryModule.supports",
+    "name": "supports",
+    "module": "python.ados.core.memory.module",
+    "file": "python/ados/core/memory/module.py",
+    "line": 9,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "MemoryModule"
+  },
+  {
+    "key": "python.ados.core.memory.module.MemoryModule.handle",
+    "name": "handle",
+    "module": "python.ados.core.memory.module",
+    "file": "python/ados/core/memory/module.py",
+    "line": 12,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "MemoryModule"
+  },
+  {
+    "key": "python.ados.core.runtime.base.Runtime.generate",
+    "name": "generate",
+    "module": "python.ados.core.runtime.base",
+    "file": "python/ados/core/runtime/base.py",
+    "line": 8,
+    "args": [
+      "self",
+      "prompt"
+    ],
+    "return_annotation": "str",
+    "docstring": null,
+    "decorators": [
+      "abstractmethod"
+    ],
+    "is_async": false,
+    "parent_class": "Runtime"
+  },
+  {
+    "key": "python.ados.core.runtime.base.Runtime.health",
+    "name": "health",
+    "module": "python.ados.core.runtime.base",
+    "file": "python/ados/core/runtime/base.py",
+    "line": 12,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "bool",
+    "docstring": null,
+    "decorators": [
+      "abstractmethod"
+    ],
+    "is_async": false,
+    "parent_class": "Runtime"
+  },
+  {
+    "key": "python.ados.core.runtime.llama_runtime.LlamaRuntime.__init__",
+    "name": "__init__",
+    "module": "python.ados.core.runtime.llama_runtime",
+    "file": "python/ados/core/runtime/llama_runtime.py",
+    "line": 9,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "LlamaRuntime"
+  },
+  {
+    "key": "python.ados.core.runtime.llama_runtime.LlamaRuntime.health",
+    "name": "health",
+    "module": "python.ados.core.runtime.llama_runtime",
+    "file": "python/ados/core/runtime/llama_runtime.py",
+    "line": 13,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "LlamaRuntime"
+  },
+  {
+    "key": "python.ados.core.runtime.llama_runtime.LlamaRuntime.generate",
+    "name": "generate",
+    "module": "python.ados.core.runtime.llama_runtime",
+    "file": "python/ados/core/runtime/llama_runtime.py",
+    "line": 21,
+    "args": [
+      "self",
+      "prompt"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "LlamaRuntime"
+  },
+  {
+    "key": "python.ados.core.validator.module.ValidatorModule.supports",
+    "name": "supports",
+    "module": "python.ados.core.validator.module",
+    "file": "python/ados/core/validator/module.py",
+    "line": 9,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ValidatorModule"
+  },
+  {
+    "key": "python.ados.core.validator.module.ValidatorModule.handle",
+    "name": "handle",
+    "module": "python.ados.core.validator.module",
+    "file": "python/ados/core/validator/module.py",
+    "line": 12,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ValidatorModule"
+  },
+  {
+    "key": "python.ados.core.context.builder.ContextBuilder.build",
+    "name": "build",
+    "module": "python.ados.core.context.builder",
+    "file": "python/ados/core/context/builder.py",
+    "line": 6,
+    "args": [
+      "self",
+      "user_prompt"
+    ],
+    "return_annotation": "str",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ContextBuilder"
+  },
+  {
+    "key": "python.ados.core.session.session.Session.__init__",
+    "name": "__init__",
+    "module": "python.ados.core.session.session",
+    "file": "python/ados/core/session/session.py",
+    "line": 9,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Session"
+  },
+  {
+    "key": "python.ados.core.session.session.Session.append",
+    "name": "append",
+    "module": "python.ados.core.session.session",
+    "file": "python/ados/core/session/session.py",
+    "line": 24,
+    "args": [
+      "self",
+      "role",
+      "text"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Session"
+  },
+  {
+    "key": "python.ados.core.session.session.Session.load",
+    "name": "load",
+    "module": "python.ados.core.session.session",
+    "file": "python/ados/core/session/session.py",
+    "line": 39,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Session"
+  },
+  {
+    "key": "python.ados.core.engine.kernel.Kernel.__init__",
+    "name": "__init__",
+    "module": "python.ados.core.engine.kernel",
+    "file": "python/ados/core/engine/kernel.py",
+    "line": 7,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Kernel"
+  },
+  {
+    "key": "python.ados.core.engine.kernel.Kernel.ask",
+    "name": "ask",
+    "module": "python.ados.core.engine.kernel",
+    "file": "python/ados/core/engine/kernel.py",
+    "line": 13,
+    "args": [
+      "self",
+      "prompt"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Kernel"
+  },
+  {
+    "key": "python.ados.core.brain.base.Brain.run",
+    "name": "run",
+    "module": "python.ados.core.brain.base",
+    "file": "python/ados/core/brain/base.py",
+    "line": 6,
+    "args": [
+      "self",
+      "prompt"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [
+      "abstractmethod"
+    ],
+    "is_async": false,
+    "parent_class": "Brain"
+  },
+  {
+    "key": "python.ados.core.brain.pipeline.Pipeline.__init__",
+    "name": "__init__",
+    "module": "python.ados.core.brain.pipeline",
+    "file": "python/ados/core/brain/pipeline.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Pipeline"
+  },
+  {
+    "key": "python.ados.core.brain.pipeline.Pipeline.add",
+    "name": "add",
+    "module": "python.ados.core.brain.pipeline",
+    "file": "python/ados/core/brain/pipeline.py",
+    "line": 6,
+    "args": [
+      "self",
+      "step"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Pipeline"
+  },
+  {
+    "key": "python.ados.core.brain.pipeline.Pipeline.execute",
+    "name": "execute",
+    "module": "python.ados.core.brain.pipeline",
+    "file": "python/ados/core/brain/pipeline.py",
+    "line": 9,
+    "args": [
+      "self",
+      "data"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Pipeline"
+  },
+  {
+    "key": "python.ados.core.brain.brain.ADOSBrain.__init__",
+    "name": "__init__",
+    "module": "python.ados.core.brain.brain",
+    "file": "python/ados/core/brain/brain.py",
+    "line": 13,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ADOSBrain"
+  },
+  {
+    "key": "python.ados.core.brain.brain.ADOSBrain.ask",
+    "name": "ask",
+    "module": "python.ados.core.brain.brain",
+    "file": "python/ados/core/brain/brain.py",
+    "line": 25,
+    "args": [
+      "self",
+      "prompt"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ADOSBrain"
+  },
+  {
+    "key": "python.ados.core.brain.stages.load_context.run",
+    "name": "run",
+    "module": "python.ados.core.brain.stages.load_context",
+    "file": "python/ados/core/brain/stages/load_context.py",
+    "line": 1,
+    "args": [
+      "data"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.core.brain.stages.planner.run",
+    "name": "run",
+    "module": "python.ados.core.brain.stages.planner",
+    "file": "python/ados/core/brain/stages/planner.py",
+    "line": 1,
+    "args": [
+      "data"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.core.brain.stages.provider.run",
+    "name": "run",
+    "module": "python.ados.core.brain.stages.provider",
+    "file": "python/ados/core/brain/stages/provider.py",
+    "line": 5,
+    "args": [
+      "prompt"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.core.brain.stages.review.run",
+    "name": "run",
+    "module": "python.ados.core.brain.stages.review",
+    "file": "python/ados/core/brain/stages/review.py",
+    "line": 1,
+    "args": [
+      "answer"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.core.project.scanner.ProjectScanner.__init__",
+    "name": "__init__",
+    "module": "python.ados.core.project.scanner",
+    "file": "python/ados/core/project/scanner.py",
+    "line": 7,
+    "args": [
+      "self",
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectScanner"
+  },
+  {
+    "key": "python.ados.core.project.scanner.ProjectScanner.project_name",
+    "name": "project_name",
+    "module": "python.ados.core.project.scanner",
+    "file": "python/ados/core/project/scanner.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectScanner"
+  },
+  {
+    "key": "python.ados.core.project.scanner.ProjectScanner.count_files",
+    "name": "count_files",
+    "module": "python.ados.core.project.scanner",
+    "file": "python/ados/core/project/scanner.py",
+    "line": 13,
+    "args": [
+      "self",
+      "ext"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectScanner"
+  },
+  {
+    "key": "python.ados.core.project.scanner.ProjectScanner.git_branch",
+    "name": "git_branch",
+    "module": "python.ados.core.project.scanner",
+    "file": "python/ados/core/project/scanner.py",
+    "line": 16,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectScanner"
+  },
+  {
+    "key": "python.ados.core.project.scanner.ProjectScanner.git_status",
+    "name": "git_status",
+    "module": "python.ados.core.project.scanner",
+    "file": "python/ados/core/project/scanner.py",
+    "line": 26,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectScanner"
+  },
+  {
+    "key": "python.ados.core.project.scanner.ProjectScanner.modules",
+    "name": "modules",
+    "module": "python.ados.core.project.scanner",
+    "file": "python/ados/core/project/scanner.py",
+    "line": 39,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectScanner"
+  },
+  {
+    "key": "python.ados.core.project.scanner.ProjectScanner.summary",
+    "name": "summary",
+    "module": "python.ados.core.project.scanner",
+    "file": "python/ados/core/project/scanner.py",
+    "line": 58,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectScanner"
+  },
+  {
+    "key": "python.ados.cli.chat.main",
+    "name": "main",
+    "module": "python.ados.cli.chat",
+    "file": "python/ados/cli/chat.py",
+    "line": 3,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.cli.scan.main",
+    "name": "main",
+    "module": "python.ados.cli.scan",
+    "file": "python/ados/cli/scan.py",
+    "line": 4,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.cli.index.main",
+    "name": "main",
+    "module": "python.ados.cli.index",
+    "file": "python/ados/cli/index.py",
+    "line": 4,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.cli.search.main",
+    "name": "main",
+    "module": "python.ados.cli.search",
+    "file": "python/ados/cli/search.py",
+    "line": 5,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.cli.explain.main",
+    "name": "main",
+    "module": "python.ados.cli.explain",
+    "file": "python/ados/cli/explain.py",
+    "line": 5,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.engine.loader.EngineLoader.load",
+    "name": "load",
+    "module": "python.ados.engine.loader",
+    "file": "python/ados/engine/loader.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "EngineLoader"
+  },
+  {
+    "key": "python.ados.state.manager.State.load",
+    "name": "load",
+    "module": "python.ados.state.manager",
+    "file": "python/ados/state/manager.py",
+    "line": 9,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "State"
+  },
+  {
+    "key": "python.ados.state.manager.State.save",
+    "name": "save",
+    "module": "python.ados.state.manager",
+    "file": "python/ados/state/manager.py",
+    "line": 15,
+    "args": [
+      "self",
+      "data"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "State"
+  },
+  {
+    "key": "python.ados.knowledge.manager.Knowledge.folders",
+    "name": "folders",
+    "module": "python.ados.knowledge.manager",
+    "file": "python/ados/knowledge/manager.py",
+    "line": 7,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Knowledge"
+  },
+  {
+    "key": "python.ados.knowledge.symbol.SymbolExtractor.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.symbol",
+    "file": "python/ados/knowledge/symbol.py",
+    "line": 6,
+    "args": [
+      "self",
+      "file",
+      "content"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolExtractor"
+  },
+  {
+    "key": "python.ados.knowledge.symbol.SymbolExtractor.extract",
+    "name": "extract",
+    "module": "python.ados.knowledge.symbol",
+    "file": "python/ados/knowledge/symbol.py",
+    "line": 16,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "List[Symbol]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolExtractor"
+  },
+  {
+    "key": "python.ados.knowledge.symbol.SymbolExtractor._extract_function",
+    "name": "_extract_function",
+    "module": "python.ados.knowledge.symbol",
+    "file": "python/ados/knowledge/symbol.py",
+    "line": 30,
+    "args": [
+      "self",
+      "node"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolExtractor"
+  },
+  {
+    "key": "python.ados.knowledge.symbol.SymbolExtractor._extract_async_function",
+    "name": "_extract_async_function",
+    "module": "python.ados.knowledge.symbol",
+    "file": "python/ados/knowledge/symbol.py",
+    "line": 53,
+    "args": [
+      "self",
+      "node"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolExtractor"
+  },
+  {
+    "key": "python.ados.knowledge.symbol.SymbolExtractor._extract_class",
+    "name": "_extract_class",
+    "module": "python.ados.knowledge.symbol",
+    "file": "python/ados/knowledge/symbol.py",
+    "line": 76,
+    "args": [
+      "self",
+      "node"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolExtractor"
+  },
+  {
+    "key": "python.ados.knowledge.symbol.SymbolExtractor._extract_import",
+    "name": "_extract_import",
+    "module": "python.ados.knowledge.symbol",
+    "file": "python/ados/knowledge/symbol.py",
+    "line": 100,
+    "args": [
+      "self",
+      "node"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolExtractor"
+  },
+  {
+    "key": "python.ados.knowledge.scanner.ProjectScanner.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.scanner",
+    "file": "python/ados/knowledge/scanner.py",
+    "line": 6,
+    "args": [
+      "self",
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectScanner"
+  },
+  {
+    "key": "python.ados.knowledge.scanner.ProjectScanner.scan",
+    "name": "scan",
+    "module": "python.ados.knowledge.scanner",
+    "file": "python/ados/knowledge/scanner.py",
+    "line": 13,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "Dict[str, List[str]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectScanner"
+  },
+  {
+    "key": "python.ados.knowledge.scanner.ProjectScanner.read_file",
+    "name": "read_file",
+    "module": "python.ados.knowledge.scanner",
+    "file": "python/ados/knowledge/scanner.py",
+    "line": 36,
+    "args": [
+      "self",
+      "rel_path"
+    ],
+    "return_annotation": "str",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectScanner"
+  },
+  {
+    "key": "python.ados.knowledge.parser.CodeParser.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.parser",
+    "file": "python/ados/knowledge/parser.py",
+    "line": 6,
+    "args": [
+      "self",
+      "file",
+      "content"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CodeParser"
+  },
+  {
+    "key": "python.ados.knowledge.parser.CodeParser.parse_module",
+    "name": "parse_module",
+    "module": "python.ados.knowledge.parser",
+    "file": "python/ados/knowledge/parser.py",
+    "line": 16,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "Optional[ModuleRecord]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CodeParser"
+  },
+  {
+    "key": "python.ados.knowledge.parser.CodeParser.parse_functions",
+    "name": "parse_functions",
+    "module": "python.ados.knowledge.parser",
+    "file": "python/ados/knowledge/parser.py",
+    "line": 59,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "List[FunctionRecord]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CodeParser"
+  },
+  {
+    "key": "python.ados.knowledge.parser.CodeParser.parse_classes",
+    "name": "parse_classes",
+    "module": "python.ados.knowledge.parser",
+    "file": "python/ados/knowledge/parser.py",
+    "line": 115,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "List[ClassRecord]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CodeParser"
+  },
+  {
+    "key": "python.ados.knowledge.function.FunctionIndex.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.function",
+    "file": "python/ados/knowledge/function.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "FunctionIndex"
+  },
+  {
+    "key": "python.ados.knowledge.function.FunctionIndex.index_file",
+    "name": "index_file",
+    "module": "python.ados.knowledge.function",
+    "file": "python/ados/knowledge/function.py",
+    "line": 9,
+    "args": [
+      "self",
+      "file",
+      "content"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "FunctionIndex"
+  },
+  {
+    "key": "python.ados.knowledge.function.FunctionIndex.search",
+    "name": "search",
+    "module": "python.ados.knowledge.function",
+    "file": "python/ados/knowledge/function.py",
+    "line": 27,
+    "args": [
+      "self",
+      "query"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "FunctionIndex"
+  },
+  {
+    "key": "python.ados.knowledge.function.FunctionIndex.to_dict",
+    "name": "to_dict",
+    "module": "python.ados.knowledge.function",
+    "file": "python/ados/knowledge/function.py",
+    "line": 37,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "FunctionIndex"
+  },
+  {
+    "key": "python.ados.knowledge.class_index.ClassIndex.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.class_index",
+    "file": "python/ados/knowledge/class_index.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ClassIndex"
+  },
+  {
+    "key": "python.ados.knowledge.class_index.ClassIndex.index_file",
+    "name": "index_file",
+    "module": "python.ados.knowledge.class_index",
+    "file": "python/ados/knowledge/class_index.py",
+    "line": 9,
+    "args": [
+      "self",
+      "file",
+      "content"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ClassIndex"
+  },
+  {
+    "key": "python.ados.knowledge.class_index.ClassIndex.search",
+    "name": "search",
+    "module": "python.ados.knowledge.class_index",
+    "file": "python/ados/knowledge/class_index.py",
+    "line": 25,
+    "args": [
+      "self",
+      "query"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ClassIndex"
+  },
+  {
+    "key": "python.ados.knowledge.class_index.ClassIndex.to_dict",
+    "name": "to_dict",
+    "module": "python.ados.knowledge.class_index",
+    "file": "python/ados/knowledge/class_index.py",
+    "line": 35,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ClassIndex"
+  },
+  {
+    "key": "python.ados.knowledge.module_index.ModuleIndex.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.module_index",
+    "file": "python/ados/knowledge/module_index.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ModuleIndex"
+  },
+  {
+    "key": "python.ados.knowledge.module_index.ModuleIndex.index_file",
+    "name": "index_file",
+    "module": "python.ados.knowledge.module_index",
+    "file": "python/ados/knowledge/module_index.py",
+    "line": 9,
+    "args": [
+      "self",
+      "file",
+      "content"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ModuleIndex"
+  },
+  {
+    "key": "python.ados.knowledge.module_index.ModuleIndex.search",
+    "name": "search",
+    "module": "python.ados.knowledge.module_index",
+    "file": "python/ados/knowledge/module_index.py",
+    "line": 22,
+    "args": [
+      "self",
+      "query"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ModuleIndex"
+  },
+  {
+    "key": "python.ados.knowledge.module_index.ModuleIndex.to_dict",
+    "name": "to_dict",
+    "module": "python.ados.knowledge.module_index",
+    "file": "python/ados/knowledge/module_index.py",
+    "line": 31,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ModuleIndex"
+  },
+  {
+    "key": "python.ados.knowledge.import_index.ImportIndex.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.import_index",
+    "file": "python/ados/knowledge/import_index.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ImportIndex"
+  },
+  {
+    "key": "python.ados.knowledge.import_index.ImportIndex.index_file",
+    "name": "index_file",
+    "module": "python.ados.knowledge.import_index",
+    "file": "python/ados/knowledge/import_index.py",
+    "line": 9,
+    "args": [
+      "self",
+      "file",
+      "content"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ImportIndex"
+  },
+  {
+    "key": "python.ados.knowledge.import_index.ImportIndex.search",
+    "name": "search",
+    "module": "python.ados.knowledge.import_index",
+    "file": "python/ados/knowledge/import_index.py",
+    "line": 22,
+    "args": [
+      "self",
+      "query"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ImportIndex"
+  },
+  {
+    "key": "python.ados.knowledge.import_index.ImportIndex.to_dict",
+    "name": "to_dict",
+    "module": "python.ados.knowledge.import_index",
+    "file": "python/ados/knowledge/import_index.py",
+    "line": 31,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ImportIndex"
+  },
+  {
+    "key": "python.ados.knowledge.graph.DependencyGraph.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.graph",
+    "file": "python/ados/knowledge/graph.py",
+    "line": 5,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.DependencyGraph.add_module_dependency",
+    "name": "add_module_dependency",
+    "module": "python.ados.knowledge.graph",
+    "file": "python/ados/knowledge/graph.py",
+    "line": 10,
+    "args": [
+      "self",
+      "from_module",
+      "to_module"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.DependencyGraph.add_class_dependency",
+    "name": "add_class_dependency",
+    "module": "python.ados.knowledge.graph",
+    "file": "python/ados/knowledge/graph.py",
+    "line": 15,
+    "args": [
+      "self",
+      "from_class",
+      "to_class"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.DependencyGraph.add_function_dependency",
+    "name": "add_function_dependency",
+    "module": "python.ados.knowledge.graph",
+    "file": "python/ados/knowledge/graph.py",
+    "line": 20,
+    "args": [
+      "self",
+      "from_func",
+      "to_func"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.DependencyGraph.build_from_imports",
+    "name": "build_from_imports",
+    "module": "python.ados.knowledge.graph",
+    "file": "python/ados/knowledge/graph.py",
+    "line": 25,
+    "args": [
+      "self",
+      "imports"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.DependencyGraph.to_dict",
+    "name": "to_dict",
+    "module": "python.ados.knowledge.graph",
+    "file": "python/ados/knowledge/graph.py",
+    "line": 33,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.storage.KnowledgeStorage.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.storage",
+    "file": "python/ados/knowledge/storage.py",
+    "line": 6,
+    "args": [
+      "self",
+      "index_dir"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "KnowledgeStorage"
+  },
+  {
+    "key": "python.ados.knowledge.storage.KnowledgeStorage.save",
+    "name": "save",
+    "module": "python.ados.knowledge.storage",
+    "file": "python/ados/knowledge/storage.py",
+    "line": 10,
+    "args": [
+      "self",
+      "name",
+      "data"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "KnowledgeStorage"
+  },
+  {
+    "key": "python.ados.knowledge.storage.KnowledgeStorage.load",
+    "name": "load",
+    "module": "python.ados.knowledge.storage",
+    "file": "python/ados/knowledge/storage.py",
+    "line": 15,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": "Any",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "KnowledgeStorage"
+  },
+  {
+    "key": "python.ados.knowledge.storage.KnowledgeStorage.exists",
+    "name": "exists",
+    "module": "python.ados.knowledge.storage",
+    "file": "python/ados/knowledge/storage.py",
+    "line": 22,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": "bool",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "KnowledgeStorage"
+  },
+  {
+    "key": "python.ados.knowledge.loader.IndexLoader.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.loader",
+    "file": "python/ados/knowledge/loader.py",
+    "line": 6,
+    "args": [
+      "self",
+      "index_dir"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IndexLoader"
+  },
+  {
+    "key": "python.ados.knowledge.loader.IndexLoader.load_all",
+    "name": "load_all",
+    "module": "python.ados.knowledge.loader",
+    "file": "python/ados/knowledge/loader.py",
+    "line": 9,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IndexLoader"
+  },
+  {
+    "key": "python.ados.knowledge.loader.IndexLoader.load",
+    "name": "load",
+    "module": "python.ados.knowledge.loader",
+    "file": "python/ados/knowledge/loader.py",
+    "line": 18,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": "Any",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IndexLoader"
+  },
+  {
+    "key": "python.ados.knowledge.search.SymbolSearcher.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.search",
+    "file": "python/ados/knowledge/search.py",
+    "line": 9,
+    "args": [
+      "self",
+      "index_loader"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolSearcher"
+  },
+  {
+    "key": "python.ados.knowledge.search.SymbolSearcher.search_symbol",
+    "name": "search_symbol",
+    "module": "python.ados.knowledge.search",
+    "file": "python/ados/knowledge/search.py",
+    "line": 25,
+    "args": [
+      "self",
+      "query"
+    ],
+    "return_annotation": "Dict[str, List[Dict[str, Any]]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolSearcher"
+  },
+  {
+    "key": "python.ados.knowledge.search.SymbolSearcher.search_by_type",
+    "name": "search_by_type",
+    "module": "python.ados.knowledge.search",
+    "file": "python/ados/knowledge/search.py",
+    "line": 33,
+    "args": [
+      "self",
+      "symbol_type",
+      "query"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolSearcher"
+  },
+  {
+    "key": "python.ados.knowledge.explain.SymbolExplainer.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.explain",
+    "file": "python/ados/knowledge/explain.py",
+    "line": 5,
+    "args": [
+      "self",
+      "index_loader"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolExplainer"
+  },
+  {
+    "key": "python.ados.knowledge.explain.SymbolExplainer.explain_module",
+    "name": "explain_module",
+    "module": "python.ados.knowledge.explain",
+    "file": "python/ados/knowledge/explain.py",
+    "line": 9,
+    "args": [
+      "self",
+      "module_name"
+    ],
+    "return_annotation": "Optional[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolExplainer"
+  },
+  {
+    "key": "python.ados.knowledge.explain.SymbolExplainer.explain_class",
+    "name": "explain_class",
+    "module": "python.ados.knowledge.explain",
+    "file": "python/ados/knowledge/explain.py",
+    "line": 16,
+    "args": [
+      "self",
+      "class_name"
+    ],
+    "return_annotation": "Optional[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolExplainer"
+  },
+  {
+    "key": "python.ados.knowledge.explain.SymbolExplainer.explain_function",
+    "name": "explain_function",
+    "module": "python.ados.knowledge.explain",
+    "file": "python/ados/knowledge/explain.py",
+    "line": 23,
+    "args": [
+      "self",
+      "function_name"
+    ],
+    "return_annotation": "Optional[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolExplainer"
+  },
+  {
+    "key": "python.ados.knowledge.context.ContextBuilder.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.context",
+    "file": "python/ados/knowledge/context.py",
+    "line": 5,
+    "args": [
+      "self",
+      "index_loader"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ContextBuilder"
+  },
+  {
+    "key": "python.ados.knowledge.context.ContextBuilder.build_context",
+    "name": "build_context",
+    "module": "python.ados.knowledge.context",
+    "file": "python/ados/knowledge/context.py",
+    "line": 9,
+    "args": [
+      "self",
+      "symbol_name"
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ContextBuilder"
+  },
+  {
+    "key": "python.ados.knowledge.context.ContextBuilder._find_related",
+    "name": "_find_related",
+    "module": "python.ados.knowledge.context",
+    "file": "python/ados/knowledge/context.py",
+    "line": 18,
+    "args": [
+      "self",
+      "symbol_name"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ContextBuilder"
+  },
+  {
+    "key": "python.ados.knowledge.context.ContextBuilder._find_imports",
+    "name": "_find_imports",
+    "module": "python.ados.knowledge.context",
+    "file": "python/ados/knowledge/context.py",
+    "line": 26,
+    "args": [
+      "self",
+      "symbol_name"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ContextBuilder"
+  },
+  {
+    "key": "python.ados.knowledge.context.ContextBuilder._find_usages",
+    "name": "_find_usages",
+    "module": "python.ados.knowledge.context",
+    "file": "python/ados/knowledge/context.py",
+    "line": 29,
+    "args": [
+      "self",
+      "symbol_name"
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ContextBuilder"
+  },
+  {
+    "key": "python.ados.knowledge.cache.IndexCache.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.cache",
+    "file": "python/ados/knowledge/cache.py",
+    "line": 6,
+    "args": [
+      "self",
+      "cache_dir"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IndexCache"
+  },
+  {
+    "key": "python.ados.knowledge.cache.IndexCache.get",
+    "name": "get",
+    "module": "python.ados.knowledge.cache",
+    "file": "python/ados/knowledge/cache.py",
+    "line": 10,
+    "args": [
+      "self",
+      "key"
+    ],
+    "return_annotation": "Optional[Any]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IndexCache"
+  },
+  {
+    "key": "python.ados.knowledge.cache.IndexCache.set",
+    "name": "set",
+    "module": "python.ados.knowledge.cache",
+    "file": "python/ados/knowledge/cache.py",
+    "line": 20,
+    "args": [
+      "self",
+      "key",
+      "value"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IndexCache"
+  },
+  {
+    "key": "python.ados.knowledge.cache.IndexCache.clear",
+    "name": "clear",
+    "module": "python.ados.knowledge.cache",
+    "file": "python/ados/knowledge/cache.py",
+    "line": 25,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IndexCache"
+  },
+  {
+    "key": "python.ados.knowledge.builder.IndexBuilder.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.builder",
+    "file": "python/ados/knowledge/builder.py",
+    "line": 12,
+    "args": [
+      "self",
+      "root",
+      "index_dir"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IndexBuilder"
+  },
+  {
+    "key": "python.ados.knowledge.builder.IndexBuilder.build",
+    "name": "build",
+    "module": "python.ados.knowledge.builder",
+    "file": "python/ados/knowledge/builder.py",
+    "line": 23,
+    "args": [
+      "self"
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IndexBuilder"
+  },
+  {
+    "key": "python.ados.knowledge.dependency_graph.DependencyGraph.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.dependency_graph",
+    "file": "python/ados/knowledge/dependency_graph.py",
+    "line": 4,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.dependency_graph.DependencyGraph.add_module_dependency",
+    "name": "add_module_dependency",
+    "module": "python.ados.knowledge.dependency_graph",
+    "file": "python/ados/knowledge/dependency_graph.py",
+    "line": 9,
+    "args": [
+      "self",
+      "from_module",
+      "to_module"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.dependency_graph.DependencyGraph.add_class_dependency",
+    "name": "add_class_dependency",
+    "module": "python.ados.knowledge.dependency_graph",
+    "file": "python/ados/knowledge/dependency_graph.py",
+    "line": 14,
+    "args": [
+      "self",
+      "from_class",
+      "to_class"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.dependency_graph.DependencyGraph.add_function_dependency",
+    "name": "add_function_dependency",
+    "module": "python.ados.knowledge.dependency_graph",
+    "file": "python/ados/knowledge/dependency_graph.py",
+    "line": 19,
+    "args": [
+      "self",
+      "from_func",
+      "to_func"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.dependency_graph.DependencyGraph.build_from_imports",
+    "name": "build_from_imports",
+    "module": "python.ados.knowledge.dependency_graph",
+    "file": "python/ados/knowledge/dependency_graph.py",
+    "line": 24,
+    "args": [
+      "self",
+      "imports"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.dependency_graph.DependencyGraph.to_dict",
+    "name": "to_dict",
+    "module": "python.ados.knowledge.dependency_graph",
+    "file": "python/ados/knowledge/dependency_graph.py",
+    "line": 32,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.indexerthon_indexer.PythonIndexer.index",
+    "name": "index",
+    "module": "python.ados.knowledge.indexerthon_indexer",
+    "file": "python/ados/knowledge/indexer/python_indexer.py",
+    "line": 7,
+    "args": [
+      "self",
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "PythonIndexer"
+  },
+  {
+    "key": "python.ados.knowledge.indexer.project_index.ProjectIndexer.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.indexer.project_index",
+    "file": "python/ados/knowledge/indexer/project_index.py",
+    "line": 7,
+    "args": [
+      "self",
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectIndexer"
+  },
+  {
+    "key": "python.ados.knowledge.indexer.project_index.ProjectIndexer.scan",
+    "name": "scan",
+    "module": "python.ados.knowledge.indexer.project_index",
+    "file": "python/ados/knowledge/indexer/project_index.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectIndexer"
+  },
+  {
+    "key": "python.ados.knowledge.indexer.project_index.ProjectIndexer.save",
+    "name": "save",
+    "module": "python.ados.knowledge.indexer.project_index",
+    "file": "python/ados/knowledge/indexer/project_index.py",
+    "line": 56,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ProjectIndexer"
+  },
+  {
+    "key": "python.ados.knowledge.indexer.indexer.SourceIndexer.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.indexer.indexer",
+    "file": "python/ados/knowledge/indexer/indexer.py",
+    "line": 6,
+    "args": [
+      "self",
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SourceIndexer"
+  },
+  {
+    "key": "python.ados.knowledge.indexer.indexer.SourceIndexer.build",
+    "name": "build",
+    "module": "python.ados.knowledge.indexer.indexer",
+    "file": "python/ados/knowledge/indexer/indexer.py",
+    "line": 9,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SourceIndexer"
+  },
+  {
+    "key": "python.ados.knowledge.context.context.AgentContext.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.context.context",
+    "file": "python/ados/knowledge/context/context.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentContext"
+  },
+  {
+    "key": "python.ados.knowledge.context.context.AgentContext.to_dict",
+    "name": "to_dict",
+    "module": "python.ados.knowledge.context.context",
+    "file": "python/ados/knowledge/context/context.py",
+    "line": 17,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentContext"
+  },
+  {
+    "key": "python.ados.knowledge.context.context_engine.ContextEngine.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.context.context_engine",
+    "file": "python/ados/knowledge/context/context_engine.py",
+    "line": 9,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ContextEngine"
+  },
+  {
+    "key": "python.ados.knowledge.context.context_engine.ContextEngine.build",
+    "name": "build",
+    "module": "python.ados.knowledge.context.context_engine",
+    "file": "python/ados/knowledge/context/context_engine.py",
+    "line": 12,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ContextEngine"
+  },
+  {
+    "key": "python.ados.knowledge.context.context_engine.ContextEngine.summary",
+    "name": "summary",
+    "module": "python.ados.knowledge.context.context_engine",
+    "file": "python/ados/knowledge/context/context_engine.py",
+    "line": 62,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ContextEngine"
+  },
+  {
+    "key": "python.ados.knowledge.graph.task_graph.TaskGraph.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.graph.task_graph",
+    "file": "python/ados/knowledge/graph/task_graph.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.task_graph.TaskGraph.add_task",
+    "name": "add_task",
+    "module": "python.ados.knowledge.graph.task_graph",
+    "file": "python/ados/knowledge/graph/task_graph.py",
+    "line": 7,
+    "args": [
+      "self",
+      "task"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.task_graph.TaskGraph.connect",
+    "name": "connect",
+    "module": "python.ados.knowledge.graph.task_graph",
+    "file": "python/ados/knowledge/graph/task_graph.py",
+    "line": 11,
+    "args": [
+      "self",
+      "parent",
+      "child"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.task_graph.TaskGraph.children",
+    "name": "children",
+    "module": "python.ados.knowledge.graph.task_graph",
+    "file": "python/ados/knowledge/graph/task_graph.py",
+    "line": 15,
+    "args": [
+      "self",
+      "task_id"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.task_graph.TaskGraph.tasks",
+    "name": "tasks",
+    "module": "python.ados.knowledge.graph.task_graph",
+    "file": "python/ados/knowledge/graph/task_graph.py",
+    "line": 18,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.__init__.DependencyGraph.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.graph.__init__",
+    "file": "python/ados/knowledge/graph/__init__.py",
+    "line": 4,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.__init__.DependencyGraph.add_module_dependency",
+    "name": "add_module_dependency",
+    "module": "python.ados.knowledge.graph.__init__",
+    "file": "python/ados/knowledge/graph/__init__.py",
+    "line": 9,
+    "args": [
+      "self",
+      "from_module",
+      "to_module"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.__init__.DependencyGraph.add_class_dependency",
+    "name": "add_class_dependency",
+    "module": "python.ados.knowledge.graph.__init__",
+    "file": "python/ados/knowledge/graph/__init__.py",
+    "line": 15,
+    "args": [
+      "self",
+      "from_class",
+      "to_class"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.__init__.DependencyGraph.add_function_dependency",
+    "name": "add_function_dependency",
+    "module": "python.ados.knowledge.graph.__init__",
+    "file": "python/ados/knowledge/graph/__init__.py",
+    "line": 21,
+    "args": [
+      "self",
+      "from_func",
+      "to_func"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.__init__.DependencyGraph.build_from_imports",
+    "name": "build_from_imports",
+    "module": "python.ados.knowledge.graph.__init__",
+    "file": "python/ados/knowledge/graph/__init__.py",
+    "line": 27,
+    "args": [
+      "self",
+      "imports"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.__init__.DependencyGraph.to_dict",
+    "name": "to_dict",
+    "module": "python.ados.knowledge.graph.__init__",
+    "file": "python/ados/knowledge/graph/__init__.py",
+    "line": 35,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.dependency_graph.DependencyGraph.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.graph.dependency_graph",
+    "file": "python/ados/knowledge/graph/dependency_graph.py",
+    "line": 8,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.dependency_graph.DependencyGraph.build",
+    "name": "build",
+    "module": "python.ados.knowledge.graph.dependency_graph",
+    "file": "python/ados/knowledge/graph/dependency_graph.py",
+    "line": 11,
+    "args": [
+      "self",
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.dependency_graph.DependencyGraph.modules",
+    "name": "modules",
+    "module": "python.ados.knowledge.graph.dependency_graph",
+    "file": "python/ados/knowledge/graph/dependency_graph.py",
+    "line": 43,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.dependency_graph.DependencyGraph.imports",
+    "name": "imports",
+    "module": "python.ados.knowledge.graph.dependency_graph",
+    "file": "python/ados/knowledge/graph/dependency_graph.py",
+    "line": 46,
+    "args": [
+      "self",
+      "module"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.dependency_graph.DependencyGraph.size",
+    "name": "size",
+    "module": "python.ados.knowledge.graph.dependency_graph",
+    "file": "python/ados/knowledge/graph/dependency_graph.py",
+    "line": 49,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.reverse_dependency.ReverseDependencyGraph.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.graph.reverse_dependency",
+    "file": "python/ados/knowledge/graph/reverse_dependency.py",
+    "line": 3,
+    "args": [
+      "self",
+      "dependency_graph"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ReverseDependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.reverse_dependency.ReverseDependencyGraph.build",
+    "name": "build",
+    "module": "python.ados.knowledge.graph.reverse_dependency",
+    "file": "python/ados/knowledge/graph/reverse_dependency.py",
+    "line": 8,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ReverseDependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.reverse_dependency.ReverseDependencyGraph.imported_by",
+    "name": "imported_by",
+    "module": "python.ados.knowledge.graph.reverse_dependency",
+    "file": "python/ados/knowledge/graph/reverse_dependency.py",
+    "line": 38,
+    "args": [
+      "self",
+      "module"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ReverseDependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.reverse_dependency.ReverseDependencyGraph.modules",
+    "name": "modules",
+    "module": "python.ados.knowledge.graph.reverse_dependency",
+    "file": "python/ados/knowledge/graph/reverse_dependency.py",
+    "line": 44,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ReverseDependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.graph.reverse_dependency.ReverseDependencyGraph.size",
+    "name": "size",
+    "module": "python.ados.knowledge.graph.reverse_dependency",
+    "file": "python/ados/knowledge/graph/reverse_dependency.py",
+    "line": 50,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ReverseDependencyGraph"
+  },
+  {
+    "key": "python.ados.knowledge.repository.analyzer.RepositoryAnalyzer.analyze",
+    "name": "analyze",
+    "module": "python.ados.knowledge.repository.analyzer",
+    "file": "python/ados/knowledge/repository/analyzer.py",
+    "line": 22,
+    "args": [
+      "self",
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryAnalyzer"
+  },
+  {
+    "key": "python.ados.knowledge.repository.knowledge.RepositoryKnowledge.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.repository.knowledge",
+    "file": "python/ados/knowledge/repository/knowledge.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryKnowledge"
+  },
+  {
+    "key": "python.ados.knowledge.repository.knowledge.RepositoryKnowledge.build",
+    "name": "build",
+    "module": "python.ados.knowledge.repository.knowledge",
+    "file": "python/ados/knowledge/repository/knowledge.py",
+    "line": 18,
+    "args": [
+      "self",
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryKnowledge"
+  },
+  {
+    "key": "python.ados.knowledge.repository.knowledge.RepositoryKnowledge.summary",
+    "name": "summary",
+    "module": "python.ados.knowledge.repository.knowledge",
+    "file": "python/ados/knowledge/repository/knowledge.py",
+    "line": 40,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryKnowledge"
+  },
+  {
+    "key": "python.ados.knowledge.workspace.workspace.Workspace.scan",
+    "name": "scan",
+    "module": "python.ados.knowledge.workspace.workspace",
+    "file": "python/ados/knowledge/workspace/workspace.py",
+    "line": 8,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Workspace"
+  },
+  {
+    "key": "python.ados.knowledge.workspace.scanner.WorkspaceScanner.scan",
+    "name": "scan",
+    "module": "python.ados.knowledge.workspace.scanner",
+    "file": "python/ados/knowledge/workspace/scanner.py",
+    "line": 6,
+    "args": [
+      "self",
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "WorkspaceScanner"
+  },
+  {
+    "key": "python.ados.knowledge.intelligence.repository.RepositoryIntelligence.__init__",
+    "name": "__init__",
+    "module": "python.ados.knowledge.intelligence.repository",
+    "file": "python/ados/knowledge/intelligence/repository.py",
+    "line": 3,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryIntelligence"
+  },
+  {
+    "key": "python.ados.knowledge.intelligence.repository.RepositoryIntelligence.summary",
+    "name": "summary",
+    "module": "python.ados.knowledge.intelligence.repository",
+    "file": "python/ados/knowledge/intelligence/repository.py",
+    "line": 7,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryIntelligence"
+  },
+  {
+    "key": "python.ados.knowledge.intelligence.repository.RepositoryIntelligence.callers",
+    "name": "callers",
+    "module": "python.ados.knowledge.intelligence.repository",
+    "file": "python/ados/knowledge/intelligence/repository.py",
+    "line": 22,
+    "args": [
+      "self",
+      "symbol"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryIntelligence"
+  },
+  {
+    "key": "python.ados.knowledge.intelligence.repository.RepositoryIntelligence.modules",
+    "name": "modules",
+    "module": "python.ados.knowledge.intelligence.repository",
+    "file": "python/ados/knowledge/intelligence/repository.py",
+    "line": 30,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryIntelligence"
+  },
+  {
+    "key": "python.ados.knowledge.intelligence.repository.RepositoryIntelligence.imports",
+    "name": "imports",
+    "module": "python.ados.knowledge.intelligence.repository",
+    "file": "python/ados/knowledge/intelligence/repository.py",
+    "line": 38,
+    "args": [
+      "self",
+      "module"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryIntelligence"
+  },
+  {
+    "key": "python.ados.research.scoring.score",
+    "name": "score",
+    "module": "python.ados.research.scoring",
+    "file": "python/ados/research/scoring.py",
+    "line": 1,
+    "args": [
+      "repo"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.research.pipeline.run",
+    "name": "run",
+    "module": "python.ados.research.pipeline",
+    "file": "python/ados/research/pipeline.py",
+    "line": 4,
+    "args": [
+      "cmd"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.research.pipeline.main",
+    "name": "main",
+    "module": "python.ados.research.pipeline",
+    "file": "python/ados/research/pipeline.py",
+    "line": 10,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.research.providers.github.Github.repository",
+    "name": "repository",
+    "module": "python.ados.research.providers.github",
+    "file": "python/ados/research/providers/github.py",
+    "line": 7,
+    "args": [
+      "self",
+      "url"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Github"
+  },
+  {
+    "key": "python.ados.kernel.event_bus.EventBus.__init__",
+    "name": "__init__",
+    "module": "python.ados.kernel.event_bus",
+    "file": "python/ados/kernel/event_bus.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "EventBus"
+  },
+  {
+    "key": "python.ados.kernel.event_bus.EventBus.subscribe",
+    "name": "subscribe",
+    "module": "python.ados.kernel.event_bus",
+    "file": "python/ados/kernel/event_bus.py",
+    "line": 6,
+    "args": [
+      "self",
+      "event",
+      "handler"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "EventBus"
+  },
+  {
+    "key": "python.ados.kernel.event_bus.EventBus.publish",
+    "name": "publish",
+    "module": "python.ados.kernel.event_bus",
+    "file": "python/ados/kernel/event_bus.py",
+    "line": 11,
+    "args": [
+      "self",
+      "event",
+      "payload"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "EventBus"
+  },
+  {
+    "key": "python.ados.kernel.test_bus.hello",
+    "name": "hello",
+    "module": "python.ados.kernel.test_bus",
+    "file": "python/ados/kernel/test_bus.py",
+    "line": 4,
+    "args": [
+      "data"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.capability.register",
+    "name": "register",
+    "module": "python.ados.kernel.capability",
+    "file": "python/ados/kernel/capability.py",
+    "line": 4,
+    "args": [
+      "name",
+      "capability"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.capability.unregister",
+    "name": "unregister",
+    "module": "python.ados.kernel.capability",
+    "file": "python/ados/kernel/capability.py",
+    "line": 10,
+    "args": [
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.capability.get",
+    "name": "get",
+    "module": "python.ados.kernel.capability",
+    "file": "python/ados/kernel/capability.py",
+    "line": 15,
+    "args": [
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.capability.providers",
+    "name": "providers",
+    "module": "python.ados.kernel.capability",
+    "file": "python/ados/kernel/capability.py",
+    "line": 20,
+    "args": [
+      "capability"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.capability.dump",
+    "name": "dump",
+    "module": "python.ados.kernel.capability",
+    "file": "python/ados/kernel/capability.py",
+    "line": 32,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.bootstrap.kernel",
+    "name": "kernel",
+    "module": "python.ados.kernel.bootstrap",
+    "file": "python/ados/kernel/bootstrap.py",
+    "line": 8,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.bootstrap.initialize",
+    "name": "initialize",
+    "module": "python.ados.kernel.bootstrap",
+    "file": "python/ados/kernel/bootstrap.py",
+    "line": 17,
+    "args": [
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.bootstrap.shutdown",
+    "name": "shutdown",
+    "module": "python.ados.kernel.bootstrap",
+    "file": "python/ados/kernel/bootstrap.py",
+    "line": 81,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.container.ServiceContainer.__init__",
+    "name": "__init__",
+    "module": "python.ados.kernel.container",
+    "file": "python/ados/kernel/container.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ServiceContainer"
+  },
+  {
+    "key": "python.ados.kernel.container.ServiceContainer.register",
+    "name": "register",
+    "module": "python.ados.kernel.container",
+    "file": "python/ados/kernel/container.py",
+    "line": 6,
+    "args": [
+      "self",
+      "name",
+      "service"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ServiceContainer"
+  },
+  {
+    "key": "python.ados.kernel.container.ServiceContainer.unregister",
+    "name": "unregister",
+    "module": "python.ados.kernel.container",
+    "file": "python/ados/kernel/container.py",
+    "line": 9,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ServiceContainer"
+  },
+  {
+    "key": "python.ados.kernel.container.ServiceContainer.get",
+    "name": "get",
+    "module": "python.ados.kernel.container",
+    "file": "python/ados/kernel/container.py",
+    "line": 12,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ServiceContainer"
+  },
+  {
+    "key": "python.ados.kernel.container.ServiceContainer.has",
+    "name": "has",
+    "module": "python.ados.kernel.container",
+    "file": "python/ados/kernel/container.py",
+    "line": 15,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ServiceContainer"
+  },
+  {
+    "key": "python.ados.kernel.container.ServiceContainer.list",
+    "name": "list",
+    "module": "python.ados.kernel.container",
+    "file": "python/ados/kernel/container.py",
+    "line": 18,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ServiceContainer"
+  },
+  {
+    "key": "python.ados.kernel.kernel.ADOSKernel.__init__",
+    "name": "__init__",
+    "module": "python.ados.kernel.kernel",
+    "file": "python/ados/kernel/kernel.py",
+    "line": 16,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ADOSKernel"
+  },
+  {
+    "key": "python.ados.kernel.kernel.ADOSKernel.info",
+    "name": "info",
+    "module": "python.ados.kernel.kernel",
+    "file": "python/ados/kernel/kernel.py",
+    "line": 28,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ADOSKernel"
+  },
+  {
+    "key": "python.ados.kernel.agent_runtime.AgentRuntime.__init__",
+    "name": "__init__",
+    "module": "python.ados.kernel.agent_runtime",
+    "file": "python/ados/kernel/agent_runtime.py",
+    "line": 7,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentRuntime"
+  },
+  {
+    "key": "python.ados.kernel.agent_runtime.AgentRuntime.run",
+    "name": "run",
+    "module": "python.ados.kernel.agent_runtime",
+    "file": "python/ados/kernel/agent_runtime.py",
+    "line": 15,
+    "args": [
+      "self",
+      "name",
+      "context"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentRuntime"
+  },
+  {
+    "key": "python.ados.kernel.agent_runtime.AgentRuntime.list",
+    "name": "list",
+    "module": "python.ados.kernel.agent_runtime",
+    "file": "python/ados/kernel/agent_runtime.py",
+    "line": 22,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentRuntime"
+  },
+  {
+    "key": "python.ados.kernel.core.config.load_yaml",
+    "name": "load_yaml",
+    "module": "python.ados.kernel.core.config",
+    "file": "python/ados/kernel/core/config.py",
+    "line": 6,
+    "args": [
+      "path"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.config.config.load_workspace",
+    "name": "load_workspace",
+    "module": "python.ados.kernel.config.config",
+    "file": "python/ados/kernel/config/config.py",
+    "line": 6,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.kernel.database.symbol_db.SymbolDatabase.__init__",
+    "name": "__init__",
+    "module": "python.ados.kernel.database.symbol_db",
+    "file": "python/ados/kernel/database/symbol_db.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolDatabase"
+  },
+  {
+    "key": "python.ados.kernel.database.symbol_db.SymbolDatabase.load",
+    "name": "load",
+    "module": "python.ados.kernel.database.symbol_db",
+    "file": "python/ados/kernel/database/symbol_db.py",
+    "line": 6,
+    "args": [
+      "self",
+      "symbols"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolDatabase"
+  },
+  {
+    "key": "python.ados.kernel.database.symbol_db.SymbolDatabase.all",
+    "name": "all",
+    "module": "python.ados.kernel.database.symbol_db",
+    "file": "python/ados/kernel/database/symbol_db.py",
+    "line": 9,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolDatabase"
+  },
+  {
+    "key": "python.ados.kernel.database.symbol_db.SymbolDatabase.find_type",
+    "name": "find_type",
+    "module": "python.ados.kernel.database.symbol_db",
+    "file": "python/ados/kernel/database/symbol_db.py",
+    "line": 12,
+    "args": [
+      "self",
+      "symbol_type"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolDatabase"
+  },
+  {
+    "key": "python.ados.kernel.database.symbol_db.SymbolDatabase.find_name",
+    "name": "find_name",
+    "module": "python.ados.kernel.database.symbol_db",
+    "file": "python/ados/kernel/database/symbol_db.py",
+    "line": 18,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolDatabase"
+  },
+  {
+    "key": "python.ados.kernel.database.symbol_db.SymbolDatabase.count",
+    "name": "count",
+    "module": "python.ados.kernel.database.symbol_db",
+    "file": "python/ados/kernel/database/symbol_db.py",
+    "line": 24,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolDatabase"
+  },
+  {
+    "key": "python.ados.capability.manager.CapabilityManager.__init__",
+    "name": "__init__",
+    "module": "python.ados.capability.manager",
+    "file": "python/ados/capability/manager.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CapabilityManager"
+  },
+  {
+    "key": "python.ados.capability.manager.CapabilityManager.register",
+    "name": "register",
+    "module": "python.ados.capability.manager",
+    "file": "python/ados/capability/manager.py",
+    "line": 6,
+    "args": [
+      "self",
+      "name",
+      "handler"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CapabilityManager"
+  },
+  {
+    "key": "python.ados.capability.manager.CapabilityManager.unregister",
+    "name": "unregister",
+    "module": "python.ados.capability.manager",
+    "file": "python/ados/capability/manager.py",
+    "line": 9,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CapabilityManager"
+  },
+  {
+    "key": "python.ados.capability.manager.CapabilityManager.get",
+    "name": "get",
+    "module": "python.ados.capability.manager",
+    "file": "python/ados/capability/manager.py",
+    "line": 12,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CapabilityManager"
+  },
+  {
+    "key": "python.ados.capability.manager.CapabilityManager.list",
+    "name": "list",
+    "module": "python.ados.capability.manager",
+    "file": "python/ados/capability/manager.py",
+    "line": 15,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CapabilityManager"
+  },
+  {
+    "key": "python.ados.reasoning.reasoner.CodeReasoner.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.reasoner",
+    "file": "python/ados/reasoning/reasoner.py",
+    "line": 3,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CodeReasoner"
+  },
+  {
+    "key": "python.ados.reasoning.reasoner.CodeReasoner.analyze",
+    "name": "analyze",
+    "module": "python.ados.reasoning.reasoner",
+    "file": "python/ados/reasoning/reasoner.py",
+    "line": 6,
+    "args": [
+      "self",
+      "symbol"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CodeReasoner"
+  },
+  {
+    "key": "python.ados.reasoning.reasoner.CodeReasoner.risk",
+    "name": "risk",
+    "module": "python.ados.reasoning.reasoner",
+    "file": "python/ados/reasoning/reasoner.py",
+    "line": 38,
+    "args": [
+      "self",
+      "callers"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CodeReasoner"
+  },
+  {
+    "key": "python.ados.reasoning.impact.ChangeImpactAnalyzer.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.impact",
+    "file": "python/ados/reasoning/impact.py",
+    "line": 3,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ChangeImpactAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.impact.ChangeImpactAnalyzer.analyze",
+    "name": "analyze",
+    "module": "python.ados.reasoning.impact",
+    "file": "python/ados/reasoning/impact.py",
+    "line": 6,
+    "args": [
+      "self",
+      "module"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ChangeImpactAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.impact_propagation.ImpactPropagationEngine.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.impact_propagation",
+    "file": "python/ados/reasoning/impact_propagation.py",
+    "line": 3,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ImpactPropagationEngine"
+  },
+  {
+    "key": "python.ados.reasoning.impact_propagation.ImpactPropagationEngine.analyze",
+    "name": "analyze",
+    "module": "python.ados.reasoning.impact_propagation",
+    "file": "python/ados/reasoning/impact_propagation.py",
+    "line": 6,
+    "args": [
+      "self",
+      "module"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ImpactPropagationEngine"
+  },
+  {
+    "key": "python.ados.reasoning.architecture.ArchitectureAnalyzer.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.architecture",
+    "file": "python/ados/reasoning/architecture.py",
+    "line": 3,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ArchitectureAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.architecture.ArchitectureAnalyzer.analyze",
+    "name": "analyze",
+    "module": "python.ados.reasoning.architecture",
+    "file": "python/ados/reasoning/architecture.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ArchitectureAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.architecture.ArchitectureAnalyzer.hotspots",
+    "name": "hotspots",
+    "module": "python.ados.reasoning.architecture",
+    "file": "python/ados/reasoning/architecture.py",
+    "line": 29,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ArchitectureAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.architecture.ArchitectureAnalyzer.summary",
+    "name": "summary",
+    "module": "python.ados.reasoning.architecture",
+    "file": "python/ados/reasoning/architecture.py",
+    "line": 39,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ArchitectureAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.cycles.CircularDependencyDetector.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.cycles",
+    "file": "python/ados/reasoning/cycles.py",
+    "line": 3,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CircularDependencyDetector"
+  },
+  {
+    "key": "python.ados.reasoning.cycles.CircularDependencyDetector.detect",
+    "name": "detect",
+    "module": "python.ados.reasoning.cycles",
+    "file": "python/ados/reasoning/cycles.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CircularDependencyDetector"
+  },
+  {
+    "key": "python.ados.reasoning.cycles.CircularDependencyDetector.summary",
+    "name": "summary",
+    "module": "python.ados.reasoning.cycles",
+    "file": "python/ados/reasoning/cycles.py",
+    "line": 74,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CircularDependencyDetector"
+  },
+  {
+    "key": "python.ados.reasoning.review.RepositoryReviewEngine.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.review",
+    "file": "python/ados/reasoning/review.py",
+    "line": 3,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryReviewEngine"
+  },
+  {
+    "key": "python.ados.reasoning.review.RepositoryReviewEngine.review",
+    "name": "review",
+    "module": "python.ados.reasoning.review",
+    "file": "python/ados/reasoning/review.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryReviewEngine"
+  },
+  {
+    "key": "python.ados.reasoning.review.RepositoryReviewEngine.hotspots",
+    "name": "hotspots",
+    "module": "python.ados.reasoning.review",
+    "file": "python/ados/reasoning/review.py",
+    "line": 22,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryReviewEngine"
+  },
+  {
+    "key": "python.ados.reasoning.review.RepositoryReviewEngine.orphan_modules",
+    "name": "orphan_modules",
+    "module": "python.ados.reasoning.review",
+    "file": "python/ados/reasoning/review.py",
+    "line": 46,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryReviewEngine"
+  },
+  {
+    "key": "python.ados.reasoning.review.RepositoryReviewEngine.summary",
+    "name": "summary",
+    "module": "python.ados.reasoning.review",
+    "file": "python/ados/reasoning/review.py",
+    "line": 61,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryReviewEngine"
+  },
+  {
+    "key": "python.ados.reasoning.deadcode.DeadCodeDetector.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.deadcode",
+    "file": "python/ados/reasoning/deadcode.py",
+    "line": 3,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DeadCodeDetector"
+  },
+  {
+    "key": "python.ados.reasoning.deadcode.DeadCodeDetector.detect",
+    "name": "detect",
+    "module": "python.ados.reasoning.deadcode",
+    "file": "python/ados/reasoning/deadcode.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DeadCodeDetector"
+  },
+  {
+    "key": "python.ados.reasoning.deadcode.DeadCodeDetector.summary",
+    "name": "summary",
+    "module": "python.ados.reasoning.deadcode",
+    "file": "python/ados/reasoning/deadcode.py",
+    "line": 51,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DeadCodeDetector"
+  },
+  {
+    "key": "python.ados.reasoning.unused_imports.UnusedImportDetector.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.unused_imports",
+    "file": "python/ados/reasoning/unused_imports.py",
+    "line": 7,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "UnusedImportDetector"
+  },
+  {
+    "key": "python.ados.reasoning.unused_imports.UnusedImportDetector.detect",
+    "name": "detect",
+    "module": "python.ados.reasoning.unused_imports",
+    "file": "python/ados/reasoning/unused_imports.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "UnusedImportDetector"
+  },
+  {
+    "key": "python.ados.reasoning.unused_imports.UnusedImportDetector.summary",
+    "name": "summary",
+    "module": "python.ados.reasoning.unused_imports",
+    "file": "python/ados/reasoning/unused_imports.py",
+    "line": 73,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "UnusedImportDetector"
+  },
+  {
+    "key": "python.ados.reasoning.smells.CodeSmellDetector.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.smells",
+    "file": "python/ados/reasoning/smells.py",
+    "line": 7,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CodeSmellDetector"
+  },
+  {
+    "key": "python.ados.reasoning.smells.CodeSmellDetector.detect",
+    "name": "detect",
+    "module": "python.ados.reasoning.smells",
+    "file": "python/ados/reasoning/smells.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CodeSmellDetector"
+  },
+  {
+    "key": "python.ados.reasoning.smells.CodeSmellDetector.summary",
+    "name": "summary",
+    "module": "python.ados.reasoning.smells",
+    "file": "python/ados/reasoning/smells.py",
+    "line": 85,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "CodeSmellDetector"
+  },
+  {
+    "key": "python.ados.reasoning.complexity.ComplexityAnalyzer.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.complexity",
+    "file": "python/ados/reasoning/complexity.py",
+    "line": 7,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ComplexityAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.complexity.ComplexityAnalyzer._complexity",
+    "name": "_complexity",
+    "module": "python.ados.reasoning.complexity",
+    "file": "python/ados/reasoning/complexity.py",
+    "line": 10,
+    "args": [
+      "self",
+      "node"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ComplexityAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.complexity.ComplexityAnalyzer.analyze",
+    "name": "analyze",
+    "module": "python.ados.reasoning.complexity",
+    "file": "python/ados/reasoning/complexity.py",
+    "line": 41,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ComplexityAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.complexity.ComplexityAnalyzer.summary",
+    "name": "summary",
+    "module": "python.ados.reasoning.complexity",
+    "file": "python/ados/reasoning/complexity.py",
+    "line": 99,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ComplexityAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.maintainability.MaintainabilityAnalyzer.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.maintainability",
+    "file": "python/ados/reasoning/maintainability.py",
+    "line": 8,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "MaintainabilityAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.maintainability.MaintainabilityAnalyzer._complexity",
+    "name": "_complexity",
+    "module": "python.ados.reasoning.maintainability",
+    "file": "python/ados/reasoning/maintainability.py",
+    "line": 11,
+    "args": [
+      "self",
+      "node"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "MaintainabilityAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.maintainability.MaintainabilityAnalyzer.analyze",
+    "name": "analyze",
+    "module": "python.ados.reasoning.maintainability",
+    "file": "python/ados/reasoning/maintainability.py",
+    "line": 42,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "MaintainabilityAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.maintainability.MaintainabilityAnalyzer.summary",
+    "name": "summary",
+    "module": "python.ados.reasoning.maintainability",
+    "file": "python/ados/reasoning/maintainability.py",
+    "line": 129,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "MaintainabilityAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.health.RepositoryHealthAnalyzer.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.health",
+    "file": "python/ados/reasoning/health.py",
+    "line": 3,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryHealthAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.health.RepositoryHealthAnalyzer.analyze",
+    "name": "analyze",
+    "module": "python.ados.reasoning.health",
+    "file": "python/ados/reasoning/health.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RepositoryHealthAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.technical_debt.TechnicalDebtAnalyzer.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.technical_debt",
+    "file": "python/ados/reasoning/technical_debt.py",
+    "line": 3,
+    "args": [
+      "self",
+      "kernel"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TechnicalDebtAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.technical_debt.TechnicalDebtAnalyzer.analyze",
+    "name": "analyze",
+    "module": "python.ados.reasoning.technical_debt",
+    "file": "python/ados/reasoning/technical_debt.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TechnicalDebtAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.technical_debt.TechnicalDebtAnalyzer.summary",
+    "name": "summary",
+    "module": "python.ados.reasoning.technical_debt",
+    "file": "python/ados/reasoning/technical_debt.py",
+    "line": 63,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TechnicalDebtAnalyzer"
+  },
+  {
+    "key": "python.ados.reasoning.planner.planner.Planner.plan",
+    "name": "plan",
+    "module": "python.ados.reasoning.planner.planner",
+    "file": "python/ados/reasoning/planner/planner.py",
+    "line": 3,
+    "args": [
+      "self",
+      "objective"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Planner"
+  },
+  {
+    "key": "python.ados.reasoning.reflection.reflector.Reflector.evaluate",
+    "name": "evaluate",
+    "module": "python.ados.reasoning.reflection.reflector",
+    "file": "python/ados/reasoning/reflection/reflector.py",
+    "line": 3,
+    "args": [
+      "self",
+      "task",
+      "result"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Reflector"
+  },
+  {
+    "key": "python.ados.reasoning.objective.objective.Objective.__post_init__",
+    "name": "__post_init__",
+    "module": "python.ados.reasoning.objective.objective",
+    "file": "python/ados/reasoning/objective/objective.py",
+    "line": 13,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Objective"
+  },
+  {
+    "key": "python.ados.reasoning.agent.base.Agent.run",
+    "name": "run",
+    "module": "python.ados.reasoning.agent.base",
+    "file": "python/ados/reasoning/agent/base.py",
+    "line": 5,
+    "args": [
+      "self",
+      "context"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Agent"
+  },
+  {
+    "key": "python.ados.reasoning.agent.registry.AgentRegistry.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.agent.registry",
+    "file": "python/ados/reasoning/agent/registry.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentRegistry"
+  },
+  {
+    "key": "python.ados.reasoning.agent.registry.AgentRegistry.register",
+    "name": "register",
+    "module": "python.ados.reasoning.agent.registry",
+    "file": "python/ados/reasoning/agent/registry.py",
+    "line": 6,
+    "args": [
+      "self",
+      "name",
+      "agent"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentRegistry"
+  },
+  {
+    "key": "python.ados.reasoning.agent.registry.AgentRegistry.get",
+    "name": "get",
+    "module": "python.ados.reasoning.agent.registry",
+    "file": "python/ados/reasoning/agent/registry.py",
+    "line": 9,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentRegistry"
+  },
+  {
+    "key": "python.ados.reasoning.agent.registry.AgentRegistry.list",
+    "name": "list",
+    "module": "python.ados.reasoning.agent.registry",
+    "file": "python/ados/reasoning/agent/registry.py",
+    "line": 12,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentRegistry"
+  },
+  {
+    "key": "python.ados.reasoning.agent.manager.AgentManager.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.agent.manager",
+    "file": "python/ados/reasoning/agent/manager.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentManager"
+  },
+  {
+    "key": "python.ados.reasoning.agent.manager.AgentManager.register",
+    "name": "register",
+    "module": "python.ados.reasoning.agent.manager",
+    "file": "python/ados/reasoning/agent/manager.py",
+    "line": 9,
+    "args": [
+      "self",
+      "agent"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentManager"
+  },
+  {
+    "key": "python.ados.reasoning.agent.manager.AgentManager.get",
+    "name": "get",
+    "module": "python.ados.reasoning.agent.manager",
+    "file": "python/ados/reasoning/agent/manager.py",
+    "line": 12,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentManager"
+  },
+  {
+    "key": "python.ados.reasoning.agent.manager.AgentManager.list",
+    "name": "list",
+    "module": "python.ados.reasoning.agent.manager",
+    "file": "python/ados/reasoning/agent/manager.py",
+    "line": 15,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentManager"
+  },
+  {
+    "key": "python.ados.reasoning.agent.manager.AgentManager.run",
+    "name": "run",
+    "module": "python.ados.reasoning.agent.manager",
+    "file": "python/ados/reasoning/agent/manager.py",
+    "line": 18,
+    "args": [
+      "self",
+      "name",
+      "context"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentManager"
+  },
+  {
+    "key": "python.ados.reasoning.agent.loader.AgentLoader.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.agent.loader",
+    "file": "python/ados/reasoning/agent/loader.py",
+    "line": 11,
+    "args": [
+      "self",
+      "manager"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentLoader"
+  },
+  {
+    "key": "python.ados.reasoning.agent.loader.AgentLoader.load",
+    "name": "load",
+    "module": "python.ados.reasoning.agent.loader",
+    "file": "python/ados/reasoning/agent/loader.py",
+    "line": 14,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentLoader"
+  },
+  {
+    "key": "python.ados.reasoning.agents.planner.PlannerAgent.run",
+    "name": "run",
+    "module": "python.ados.reasoning.agents.planner",
+    "file": "python/ados/reasoning/agents/planner.py",
+    "line": 9,
+    "args": [
+      "self",
+      "context"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "PlannerAgent"
+  },
+  {
+    "key": "python.ados.reasoning.agents.knowledge.KnowledgeAgent.run",
+    "name": "run",
+    "module": "python.ados.reasoning.agents.knowledge",
+    "file": "python/ados/reasoning/agents/knowledge.py",
+    "line": 8,
+    "args": [
+      "self",
+      "context"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "KnowledgeAgent"
+  },
+  {
+    "key": "python.ados.reasoning.orchestrator.orchestrator.Orchestrator.__init__",
+    "name": "__init__",
+    "module": "python.ados.reasoning.orchestrator.orchestrator",
+    "file": "python/ados/reasoning/orchestrator/orchestrator.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Orchestrator"
+  },
+  {
+    "key": "python.ados.reasoning.orchestrator.orchestrator.Orchestrator.register",
+    "name": "register",
+    "module": "python.ados.reasoning.orchestrator.orchestrator",
+    "file": "python/ados/reasoning/orchestrator/orchestrator.py",
+    "line": 6,
+    "args": [
+      "self",
+      "name",
+      "service"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Orchestrator"
+  },
+  {
+    "key": "python.ados.reasoning.orchestrator.orchestrator.Orchestrator.get",
+    "name": "get",
+    "module": "python.ados.reasoning.orchestrator.orchestrator",
+    "file": "python/ados/reasoning/orchestrator/orchestrator.py",
+    "line": 9,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Orchestrator"
+  },
+  {
+    "key": "python.ados.reasoning.orchestrator.orchestrator.Orchestrator.run",
+    "name": "run",
+    "module": "python.ados.reasoning.orchestrator.orchestrator",
+    "file": "python/ados/reasoning/orchestrator/orchestrator.py",
+    "line": 12,
+    "args": [
+      "self",
+      "objective"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Orchestrator"
+  },
+  {
+    "key": "python.ados.tool.registry.ToolRegistry.__init__",
+    "name": "__init__",
+    "module": "python.ados.tool.registry",
+    "file": "python/ados/tool/registry.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ToolRegistry"
+  },
+  {
+    "key": "python.ados.tool.registry.ToolRegistry.register",
+    "name": "register",
+    "module": "python.ados.tool.registry",
+    "file": "python/ados/tool/registry.py",
+    "line": 6,
+    "args": [
+      "self",
+      "name",
+      "tool"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ToolRegistry"
+  },
+  {
+    "key": "python.ados.tool.registry.ToolRegistry.unregister",
+    "name": "unregister",
+    "module": "python.ados.tool.registry",
+    "file": "python/ados/tool/registry.py",
+    "line": 9,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ToolRegistry"
+  },
+  {
+    "key": "python.ados.tool.registry.ToolRegistry.get",
+    "name": "get",
+    "module": "python.ados.tool.registry",
+    "file": "python/ados/tool/registry.py",
+    "line": 12,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ToolRegistry"
+  },
+  {
+    "key": "python.ados.tool.registry.ToolRegistry.list",
+    "name": "list",
+    "module": "python.ados.tool.registry",
+    "file": "python/ados/tool/registry.py",
+    "line": 15,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ToolRegistry"
+  },
+  {
+    "key": "python.ados.tool.executor.ToolExecutor.__init__",
+    "name": "__init__",
+    "module": "python.ados.tool.executor",
+    "file": "python/ados/tool/executor.py",
+    "line": 3,
+    "args": [
+      "self",
+      "registry"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ToolExecutor"
+  },
+  {
+    "key": "python.ados.tool.executor.ToolExecutor.execute",
+    "name": "execute",
+    "module": "python.ados.tool.executor",
+    "file": "python/ados/tool/executor.py",
+    "line": 6,
+    "args": [
+      "self",
+      "tool_name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ToolExecutor"
+  },
+  {
+    "key": "python.ados.queue.task_queue.TaskQueue.__init__",
+    "name": "__init__",
+    "module": "python.ados.queue.task_queue",
+    "file": "python/ados/queue/task_queue.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskQueue"
+  },
+  {
+    "key": "python.ados.queue.task_queue.TaskQueue.push",
+    "name": "push",
+    "module": "python.ados.queue.task_queue",
+    "file": "python/ados/queue/task_queue.py",
+    "line": 9,
+    "args": [
+      "self",
+      "task"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskQueue"
+  },
+  {
+    "key": "python.ados.queue.task_queue.TaskQueue.pop",
+    "name": "pop",
+    "module": "python.ados.queue.task_queue",
+    "file": "python/ados/queue/task_queue.py",
+    "line": 12,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskQueue"
+  },
+  {
+    "key": "python.ados.queue.task_queue.TaskQueue.pending",
+    "name": "pending",
+    "module": "python.ados.queue.task_queue",
+    "file": "python/ados/queue/task_queue.py",
+    "line": 17,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskQueue"
+  },
+  {
+    "key": "python.ados.queue.task_queue.TaskQueue.empty",
+    "name": "empty",
+    "module": "python.ados.queue.task_queue",
+    "file": "python/ados/queue/task_queue.py",
+    "line": 20,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskQueue"
+  },
+  {
+    "key": "python.ados.queue.task_queue.TaskQueue.list",
+    "name": "list",
+    "module": "python.ados.queue.task_queue",
+    "file": "python/ados/queue/task_queue.py",
+    "line": 23,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskQueue"
+  },
+  {
+    "key": "python.ados.resolver.dependency.DependencyResolver.__init__",
+    "name": "__init__",
+    "module": "python.ados.resolver.dependency",
+    "file": "python/ados/resolver/dependency.py",
+    "line": 3,
+    "args": [
+      "self",
+      "graph"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyResolver"
+  },
+  {
+    "key": "python.ados.resolver.dependency.DependencyResolver.complete",
+    "name": "complete",
+    "module": "python.ados.resolver.dependency",
+    "file": "python/ados/resolver/dependency.py",
+    "line": 7,
+    "args": [
+      "self",
+      "task_id"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyResolver"
+  },
+  {
+    "key": "python.ados.resolver.dependency.DependencyResolver.ready",
+    "name": "ready",
+    "module": "python.ados.resolver.dependency",
+    "file": "python/ados/resolver/dependency.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "DependencyResolver"
+  },
+  {
+    "key": "python.ados.execution.executor.TaskExecutor.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.executor",
+    "file": "python/ados/execution/executor.py",
+    "line": 3,
+    "args": [
+      "self",
+      "queue"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskExecutor"
+  },
+  {
+    "key": "python.ados.execution.executor.TaskExecutor.run",
+    "name": "run",
+    "module": "python.ados.execution.executor",
+    "file": "python/ados/execution/executor.py",
+    "line": 7,
+    "args": [
+      "self",
+      "callback"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "TaskExecutor"
+  },
+  {
+    "key": "python.ados.execution.engine.ExecutionEngine.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.engine",
+    "file": "python/ados/execution/engine.py",
+    "line": 6,
+    "args": [
+      "self",
+      "queue"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ExecutionEngine"
+  },
+  {
+    "key": "python.ados.execution.engine.ExecutionEngine.execute",
+    "name": "execute",
+    "module": "python.ados.execution.engine",
+    "file": "python/ados/execution/engine.py",
+    "line": 10,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ExecutionEngine"
+  },
+  {
+    "key": "python.ados.execution.runtime.doctor.doctor",
+    "name": "doctor",
+    "module": "python.ados.execution.runtime.doctor",
+    "file": "python/ados/execution/runtime/doctor.py",
+    "line": 4,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.execution.runtime.memory.RuntimeMemory.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.runtime.memory",
+    "file": "python/ados/execution/runtime/memory.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeMemory"
+  },
+  {
+    "key": "python.ados.execution.runtime.memory.RuntimeMemory.put",
+    "name": "put",
+    "module": "python.ados.execution.runtime.memory",
+    "file": "python/ados/execution/runtime/memory.py",
+    "line": 6,
+    "args": [
+      "self",
+      "key",
+      "value"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeMemory"
+  },
+  {
+    "key": "python.ados.execution.runtime.memory.RuntimeMemory.get",
+    "name": "get",
+    "module": "python.ados.execution.runtime.memory",
+    "file": "python/ados/execution/runtime/memory.py",
+    "line": 9,
+    "args": [
+      "self",
+      "key",
+      "default"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeMemory"
+  },
+  {
+    "key": "python.ados.execution.runtime.memory.RuntimeMemory.delete",
+    "name": "delete",
+    "module": "python.ados.execution.runtime.memory",
+    "file": "python/ados/execution/runtime/memory.py",
+    "line": 12,
+    "args": [
+      "self",
+      "key"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeMemory"
+  },
+  {
+    "key": "python.ados.execution.runtime.memory.RuntimeMemory.clear",
+    "name": "clear",
+    "module": "python.ados.execution.runtime.memory",
+    "file": "python/ados/execution/runtime/memory.py",
+    "line": 15,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeMemory"
+  },
+  {
+    "key": "python.ados.execution.runtime.memory.RuntimeMemory.keys",
+    "name": "keys",
+    "module": "python.ados.execution.runtime.memory",
+    "file": "python/ados/execution/runtime/memory.py",
+    "line": 18,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeMemory"
+  },
+  {
+    "key": "python.ados.execution.runtime.memory.RuntimeMemory.dump",
+    "name": "dump",
+    "module": "python.ados.execution.runtime.memory",
+    "file": "python/ados/execution/runtime/memory.py",
+    "line": 21,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeMemory"
+  },
+  {
+    "key": "python.ados.execution.runtime.events.EventBus.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.runtime.events",
+    "file": "python/ados/execution/runtime/events.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "EventBus"
+  },
+  {
+    "key": "python.ados.execution.runtime.events.EventBus.subscribe",
+    "name": "subscribe",
+    "module": "python.ados.execution.runtime.events",
+    "file": "python/ados/execution/runtime/events.py",
+    "line": 9,
+    "args": [
+      "self",
+      "event",
+      "handler"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "EventBus"
+  },
+  {
+    "key": "python.ados.execution.runtime.events.EventBus.publish",
+    "name": "publish",
+    "module": "python.ados.execution.runtime.events",
+    "file": "python/ados/execution/runtime/events.py",
+    "line": 12,
+    "args": [
+      "self",
+      "event",
+      "payload"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "EventBus"
+  },
+  {
+    "key": "python.ados.execution.runtime.events.EventBus.listeners",
+    "name": "listeners",
+    "module": "python.ados.execution.runtime.events",
+    "file": "python/ados/execution/runtime/events.py",
+    "line": 17,
+    "args": [
+      "self",
+      "event"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "EventBus"
+  },
+  {
+    "key": "python.ados.execution.runtime.scheduler.RuntimeScheduler.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.runtime.scheduler",
+    "file": "python/ados/execution/runtime/scheduler.py",
+    "line": 6,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeScheduler"
+  },
+  {
+    "key": "python.ados.execution.runtime.scheduler.RuntimeScheduler.schedule",
+    "name": "schedule",
+    "module": "python.ados.execution.runtime.scheduler",
+    "file": "python/ados/execution/runtime/scheduler.py",
+    "line": 9,
+    "args": [
+      "self",
+      "task"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeScheduler"
+  },
+  {
+    "key": "python.ados.execution.runtime.scheduler.RuntimeScheduler.next",
+    "name": "next",
+    "module": "python.ados.execution.runtime.scheduler",
+    "file": "python/ados/execution/runtime/scheduler.py",
+    "line": 12,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeScheduler"
+  },
+  {
+    "key": "python.ados.execution.runtime.scheduler.RuntimeScheduler.pending",
+    "name": "pending",
+    "module": "python.ados.execution.runtime.scheduler",
+    "file": "python/ados/execution/runtime/scheduler.py",
+    "line": 17,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeScheduler"
+  },
+  {
+    "key": "python.ados.execution.runtime.scheduler.RuntimeScheduler.clear",
+    "name": "clear",
+    "module": "python.ados.execution.runtime.scheduler",
+    "file": "python/ados/execution/runtime/scheduler.py",
+    "line": 20,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeScheduler"
+  },
+  {
+    "key": "python.ados.execution.runtime.integration.RuntimeIntegration.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.runtime.integration",
+    "file": "python/ados/execution/runtime/integration.py",
+    "line": 9,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeIntegration"
+  },
+  {
+    "key": "python.ados.execution.runtime.integration.RuntimeIntegration.load_tasks",
+    "name": "load_tasks",
+    "module": "python.ados.execution.runtime.integration",
+    "file": "python/ados/execution/runtime/integration.py",
+    "line": 15,
+    "args": [
+      "self",
+      "tasks"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeIntegration"
+  },
+  {
+    "key": "python.ados.execution.runtime.integration.RuntimeIntegration.execute",
+    "name": "execute",
+    "module": "python.ados.execution.runtime.integration",
+    "file": "python/ados/execution/runtime/integration.py",
+    "line": 35,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeIntegration"
+  },
+  {
+    "key": "python.ados.execution.runtime.objective_runner.ObjectiveRunner.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.runtime.objective_runner",
+    "file": "python/ados/execution/runtime/objective_runner.py",
+    "line": 8,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ObjectiveRunner"
+  },
+  {
+    "key": "python.ados.execution.runtime.objective_runner.ObjectiveRunner.run",
+    "name": "run",
+    "module": "python.ados.execution.runtime.objective_runner",
+    "file": "python/ados/execution/runtime/objective_runner.py",
+    "line": 14,
+    "args": [
+      "self",
+      "objective"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "ObjectiveRunner"
+  },
+  {
+    "key": "python.ados.execution.runtime.dispatcher.Dispatcher.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.runtime.dispatcher",
+    "file": "python/ados/execution/runtime/dispatcher.py",
+    "line": 7,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Dispatcher"
+  },
+  {
+    "key": "python.ados.execution.runtime.dispatcher.Dispatcher.register_route",
+    "name": "register_route",
+    "module": "python.ados.execution.runtime.dispatcher",
+    "file": "python/ados/execution/runtime/dispatcher.py",
+    "line": 13,
+    "args": [
+      "self",
+      "task_type",
+      "agent_name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Dispatcher"
+  },
+  {
+    "key": "python.ados.execution.runtime.dispatcher.Dispatcher.register_agent",
+    "name": "register_agent",
+    "module": "python.ados.execution.runtime.dispatcher",
+    "file": "python/ados/execution/runtime/dispatcher.py",
+    "line": 17,
+    "args": [
+      "self",
+      "agent"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Dispatcher"
+  },
+  {
+    "key": "python.ados.execution.runtime.dispatcher.Dispatcher.dispatch",
+    "name": "dispatch",
+    "module": "python.ados.execution.runtime.dispatcher",
+    "file": "python/ados/execution/runtime/dispatcher.py",
+    "line": 21,
+    "args": [
+      "self",
+      "task",
+      "context"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Dispatcher"
+  },
+  {
+    "key": "python.ados.execution.runtime.loop.RuntimeLoop.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.runtime.loop",
+    "file": "python/ados/execution/runtime/loop.py",
+    "line": 3,
+    "args": [
+      "self",
+      "queue",
+      "dispatcher",
+      "reflector"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeLoop"
+  },
+  {
+    "key": "python.ados.execution.runtime.loop.RuntimeLoop.run",
+    "name": "run",
+    "module": "python.ados.execution.runtime.loop",
+    "file": "python/ados/execution/runtime/loop.py",
+    "line": 12,
+    "args": [
+      "self",
+      "context"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "RuntimeLoop"
+  },
+  {
+    "key": "python.ados.execution.executor.executor.Executor.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.executor.executor",
+    "file": "python/ados/execution/executor/executor.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Executor"
+  },
+  {
+    "key": "python.ados.execution.executor.executor.Executor.register",
+    "name": "register",
+    "module": "python.ados.execution.executor.executor",
+    "file": "python/ados/execution/executor/executor.py",
+    "line": 6,
+    "args": [
+      "self",
+      "task_type",
+      "handler"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Executor"
+  },
+  {
+    "key": "python.ados.execution.executor.executor.Executor.execute",
+    "name": "execute",
+    "module": "python.ados.execution.executor.executor",
+    "file": "python/ados/execution/executor/executor.py",
+    "line": 9,
+    "args": [
+      "self",
+      "task"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Executor"
+  },
+  {
+    "key": "python.ados.execution.executor.executor.Executor.list",
+    "name": "list",
+    "module": "python.ados.execution.executor.executor",
+    "file": "python/ados/execution/executor/executor.py",
+    "line": 19,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Executor"
+  },
+  {
+    "key": "python.ados.execution.pipeline.pipeline.AgentPipeline.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.pipeline.pipeline",
+    "file": "python/ados/execution/pipeline/pipeline.py",
+    "line": 3,
+    "args": [
+      "self",
+      "manager"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentPipeline"
+  },
+  {
+    "key": "python.ados.execution.pipeline.pipeline.AgentPipeline.add",
+    "name": "add",
+    "module": "python.ados.execution.pipeline.pipeline",
+    "file": "python/ados/execution/pipeline/pipeline.py",
+    "line": 7,
+    "args": [
+      "self",
+      "agent"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentPipeline"
+  },
+  {
+    "key": "python.ados.execution.pipeline.pipeline.AgentPipeline.run",
+    "name": "run",
+    "module": "python.ados.execution.pipeline.pipeline",
+    "file": "python/ados/execution/pipeline/pipeline.py",
+    "line": 11,
+    "args": [
+      "self",
+      "context"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentPipeline"
+  },
+  {
+    "key": "python.ados.execution.plugins.loader.PluginLoader.discover",
+    "name": "discover",
+    "module": "python.ados.execution.plugins.loader",
+    "file": "python/ados/execution/plugins/loader.py",
+    "line": 7,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "PluginLoader"
+  },
+  {
+    "key": "python.ados.execution.workflow.workflow.Workflow.__init__",
+    "name": "__init__",
+    "module": "python.ados.execution.workflow.workflow",
+    "file": "python/ados/execution/workflow/workflow.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Workflow"
+  },
+  {
+    "key": "python.ados.execution.workflow.workflow.Workflow.add",
+    "name": "add",
+    "module": "python.ados.execution.workflow.workflow",
+    "file": "python/ados/execution/workflow/workflow.py",
+    "line": 6,
+    "args": [
+      "self",
+      "step"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Workflow"
+  },
+  {
+    "key": "python.ados.execution.workflow.workflow.Workflow.run",
+    "name": "run",
+    "module": "python.ados.execution.workflow.workflow",
+    "file": "python/ados/execution/workflow/workflow.py",
+    "line": 9,
+    "args": [
+      "self",
+      "context"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "Workflow"
+  },
+  {
+    "key": "python.ados.execution.integrations.registry.IntegrationRegistry.status",
+    "name": "status",
+    "module": "python.ados.execution.integrations.registry",
+    "file": "python/ados/execution/integrations/registry.py",
+    "line": 21,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IntegrationRegistry"
+  },
+  {
+    "key": "python.ados.execution.integrations.registry.IntegrationRegistry.versions",
+    "name": "versions",
+    "module": "python.ados.execution.integrations.registry",
+    "file": "python/ados/execution/integrations/registry.py",
+    "line": 44,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "IntegrationRegistry"
+  },
+  {
+    "key": "python.ados.reference.resolver.SymbolReferenceResolver.__init__",
+    "name": "__init__",
+    "module": "python.ados.reference.resolver",
+    "file": "python/ados/reference/resolver.py",
+    "line": 7,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolReferenceResolver"
+  },
+  {
+    "key": "python.ados.reference.resolver.SymbolReferenceResolver.build",
+    "name": "build",
+    "module": "python.ados.reference.resolver",
+    "file": "python/ados/reference/resolver.py",
+    "line": 11,
+    "args": [
+      "self",
+      "root"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolReferenceResolver"
+  },
+  {
+    "key": "python.ados.reference.resolver.SymbolReferenceResolver.symbols",
+    "name": "symbols",
+    "module": "python.ados.reference.resolver",
+    "file": "python/ados/reference/resolver.py",
+    "line": 65,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolReferenceResolver"
+  },
+  {
+    "key": "python.ados.reference.resolver.SymbolReferenceResolver.callers",
+    "name": "callers",
+    "module": "python.ados.reference.resolver",
+    "file": "python/ados/reference/resolver.py",
+    "line": 68,
+    "args": [
+      "self",
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolReferenceResolver"
+  },
+  {
+    "key": "python.ados.reference.resolver.SymbolReferenceResolver.count",
+    "name": "count",
+    "module": "python.ados.reference.resolver",
+    "file": "python/ados/reference/resolver.py",
+    "line": 71,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "SymbolReferenceResolver"
+  },
+  {
+    "key": "python.ados.presentation.cli.workspace.run",
+    "name": "run",
+    "module": "python.ados.presentation.cli.workspace",
+    "file": "python/ados/presentation/cli/workspace.py",
+    "line": 4,
+    "args": [
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.cli.doctor.run",
+    "name": "run",
+    "module": "python.ados.presentation.cli.doctor",
+    "file": "python/ados/presentation/cli/doctor.py",
+    "line": 3,
+    "args": [
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.cli.research.run",
+    "name": "run",
+    "module": "python.ados.presentation.cli.research",
+    "file": "python/ados/presentation/cli/research.py",
+    "line": 3,
+    "args": [
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.cli.architecture.run",
+    "name": "run",
+    "module": "python.ados.presentation.cli.architecture",
+    "file": "python/ados/presentation/cli/architecture.py",
+    "line": 3,
+    "args": [
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.cli.framework.run",
+    "name": "run",
+    "module": "python.ados.presentation.cli.framework",
+    "file": "python/ados/presentation/cli/framework.py",
+    "line": 3,
+    "args": [
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.cli.dependency.run",
+    "name": "run",
+    "module": "python.ados.presentation.cli.dependency",
+    "file": "python/ados/presentation/cli/dependency.py",
+    "line": 3,
+    "args": [
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.cli.planner.run",
+    "name": "run",
+    "module": "python.ados.presentation.cli.planner",
+    "file": "python/ados/presentation/cli/planner.py",
+    "line": 4,
+    "args": [
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.cli.context.run",
+    "name": "run",
+    "module": "python.ados.presentation.cli.context",
+    "file": "python/ados/presentation/cli/context.py",
+    "line": 4,
+    "args": [
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.cli.search.run",
+    "name": "run",
+    "module": "python.ados.presentation.cli.search",
+    "file": "python/ados/presentation/cli/search.py",
+    "line": 4,
+    "args": [
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.cli.index.run",
+    "name": "run",
+    "module": "python.ados.presentation.cli.index",
+    "file": "python/ados/presentation/cli/index.py",
+    "line": 4,
+    "args": [
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.router.router.AgentRouter.__init__",
+    "name": "__init__",
+    "module": "python.ados.presentation.router.router",
+    "file": "python/ados/presentation/router/router.py",
+    "line": 3,
+    "args": [
+      "self"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentRouter"
+  },
+  {
+    "key": "python.ados.presentation.router.router.AgentRouter.register",
+    "name": "register",
+    "module": "python.ados.presentation.router.router",
+    "file": "python/ados/presentation/router/router.py",
+    "line": 6,
+    "args": [
+      "self",
+      "task_type",
+      "agent_name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentRouter"
+  },
+  {
+    "key": "python.ados.presentation.router.router.AgentRouter.resolve",
+    "name": "resolve",
+    "module": "python.ados.presentation.router.router",
+    "file": "python/ados/presentation/router/router.py",
+    "line": 9,
+    "args": [
+      "self",
+      "task"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": "AgentRouter"
+  },
+  {
+    "key": "python.ados.presentation.router.router.dispatch",
+    "name": "dispatch",
+    "module": "python.ados.presentation.router.router",
+    "file": "python/ados/presentation/router/router.py",
+    "line": 16,
+    "args": [
+      "command",
+      "args"
+    ],
+    "return_annotation": null,
+    "docstring": "Universal command dispatcher.",
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.router.router.ensure_boot",
+    "name": "ensure_boot",
+    "module": "python.ados.presentation.router.router",
+    "file": "python/ados/presentation/router/router.py",
+    "line": 59,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.router.registry.register",
+    "name": "register",
+    "module": "python.ados.presentation.router.registry",
+    "file": "python/ados/presentation/router/registry.py",
+    "line": 12,
+    "args": [
+      "name",
+      "handler"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.router.registry.unregister",
+    "name": "unregister",
+    "module": "python.ados.presentation.router.registry",
+    "file": "python/ados/presentation/router/registry.py",
+    "line": 16,
+    "args": [
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.router.registry.get",
+    "name": "get",
+    "module": "python.ados.presentation.router.registry",
+    "file": "python/ados/presentation/router/registry.py",
+    "line": 20,
+    "args": [
+      "name"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.router.registry.all_commands",
+    "name": "all_commands",
+    "module": "python.ados.presentation.router.registry",
+    "file": "python/ados/presentation/router/registry.py",
+    "line": 24,
+    "args": [],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.api.fastapi_app.is_online",
+    "name": "is_online",
+    "module": "python.ados.presentation.api.fastapi_app",
+    "file": "python/ados/presentation/api/fastapi_app.py",
+    "line": 14,
+    "args": [],
+    "return_annotation": null,
+    "docstring": "Sensor Sinyal: Pastikan internet HP aktif",
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.api.fastapi_app.call_openrouter_agent",
+    "name": "call_openrouter_agent",
+    "module": "python.ados.presentation.api.fastapi_app",
+    "file": "python/ados/presentation/api/fastapi_app.py",
+    "line": 23,
+    "args": [
+      "prompt",
+      "context_code"
+    ],
+    "return_annotation": null,
+    "docstring": "Memanggil Otak AI Terkuat di Cloud OpenRouter secara GRATIS",
+    "decorators": [],
+    "is_async": false,
+    "parent_class": null
+  },
+  {
+    "key": "python.ados.presentation.api.fastapi_app.execute_ados_pipeline",
+    "name": "execute_ados_pipeline",
+    "module": "python.ados.presentation.api.fastapi_app",
+    "file": "python/ados/presentation/api/fastapi_app.py",
+    "line": 50,
+    "args": [
+      "request"
+    ],
+    "return_annotation": null,
+    "docstring": null,
+    "decorators": [
+      "app.post('/api/v1/execute')"
+    ],
+    "is_async": true,
+    "parent_class": null
+  }
+]

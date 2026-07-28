@@ -1,0 +1,1741 @@
+[
+  {
+    "key": "python.ados.core.kernel.module.Module",
+    "name": "Module",
+    "module": "python.ados.core.kernel.module",
+    "file": "python/ados/core/kernel/module.py",
+    "line": 3,
+    "bases": [
+      "ABC"
+    ],
+    "methods": [
+      "supports",
+      "handle"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.kernel.registry.Registry",
+    "name": "Registry",
+    "module": "python.ados.core.kernel.registry",
+    "file": "python/ados/core/kernel/registry.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register",
+      "get_modules"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.kernel.kernel.Kernel",
+    "name": "Kernel",
+    "module": "python.ados.core.kernel.kernel",
+    "file": "python/ados/core/kernel/kernel.py",
+    "line": 3,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register",
+      "dispatch"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.events.event.Event",
+    "name": "Event",
+    "module": "python.ados.core.events.event",
+    "file": "python/ados/core/events/event.py",
+    "line": 5,
+    "bases": [],
+    "methods": [],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.core.router.module.RouterModule",
+    "name": "RouterModule",
+    "module": "python.ados.core.router.module",
+    "file": "python/ados/core/router/module.py",
+    "line": 3,
+    "bases": [
+      "Module"
+    ],
+    "methods": [
+      "supports",
+      "handle"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.providers.local_provider.LocalProvider",
+    "name": "LocalProvider",
+    "module": "python.ados.core.providers.local_provider",
+    "file": "python/ados/core/providers/local_provider.py",
+    "line": 3,
+    "bases": [
+      "Module"
+    ],
+    "methods": [
+      "supports",
+      "handle"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.providers.base.Provider",
+    "name": "Provider",
+    "module": "python.ados.core.providers.base",
+    "file": "python/ados/core/providers/base.py",
+    "line": 3,
+    "bases": [
+      "ABC"
+    ],
+    "methods": [
+      "available",
+      "generate"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.providers.router.ProviderRouter",
+    "name": "ProviderRouter",
+    "module": "python.ados.core.providers.router",
+    "file": "python/ados/core/providers/router.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "select"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.providers.local.qwen.QwenProvider",
+    "name": "QwenProvider",
+    "module": "python.ados.core.providers.local.qwen",
+    "file": "python/ados/core/providers/local/qwen.py",
+    "line": 4,
+    "bases": [
+      "Provider"
+    ],
+    "methods": [
+      "__init__",
+      "available",
+      "generate"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.conversation.module.ConversationModule",
+    "name": "ConversationModule",
+    "module": "python.ados.core.conversation.module",
+    "file": "python/ados/core/conversation/module.py",
+    "line": 3,
+    "bases": [
+      "Module"
+    ],
+    "methods": [
+      "supports",
+      "handle"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.planner.module.PlannerModule",
+    "name": "PlannerModule",
+    "module": "python.ados.core.planner.module",
+    "file": "python/ados/core/planner/module.py",
+    "line": 3,
+    "bases": [
+      "Module"
+    ],
+    "methods": [
+      "supports",
+      "handle"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.memory.module.MemoryModule",
+    "name": "MemoryModule",
+    "module": "python.ados.core.memory.module",
+    "file": "python/ados/core/memory/module.py",
+    "line": 3,
+    "bases": [
+      "Module"
+    ],
+    "methods": [
+      "supports",
+      "handle"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.runtime.base.Runtime",
+    "name": "Runtime",
+    "module": "python.ados.core.runtime.base",
+    "file": "python/ados/core/runtime/base.py",
+    "line": 3,
+    "bases": [
+      "ABC"
+    ],
+    "methods": [
+      "generate",
+      "health"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.runtime.llama_runtime.LlamaRuntime",
+    "name": "LlamaRuntime",
+    "module": "python.ados.core.runtime.llama_runtime",
+    "file": "python/ados/core/runtime/llama_runtime.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "health",
+      "generate"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.validator.module.ValidatorModule",
+    "name": "ValidatorModule",
+    "module": "python.ados.core.validator.module",
+    "file": "python/ados/core/validator/module.py",
+    "line": 3,
+    "bases": [
+      "Module"
+    ],
+    "methods": [
+      "supports",
+      "handle"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.context.builder.ContextBuilder",
+    "name": "ContextBuilder",
+    "module": "python.ados.core.context.builder",
+    "file": "python/ados/core/context/builder.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "build"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.session.session.Session",
+    "name": "Session",
+    "module": "python.ados.core.session.session",
+    "file": "python/ados/core/session/session.py",
+    "line": 7,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "append",
+      "load"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.engine.kernel.Kernel",
+    "name": "Kernel",
+    "module": "python.ados.core.engine.kernel",
+    "file": "python/ados/core/engine/kernel.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "ask"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.brain.base.Brain",
+    "name": "Brain",
+    "module": "python.ados.core.brain.base",
+    "file": "python/ados/core/brain/base.py",
+    "line": 3,
+    "bases": [
+      "ABC"
+    ],
+    "methods": [
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.brain.pipeline.Pipeline",
+    "name": "Pipeline",
+    "module": "python.ados.core.brain.pipeline",
+    "file": "python/ados/core/brain/pipeline.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "add",
+      "execute"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.brain.brain.ADOSBrain",
+    "name": "ADOSBrain",
+    "module": "python.ados.core.brain.brain",
+    "file": "python/ados/core/brain/brain.py",
+    "line": 11,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "ask"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.core.project.scanner.ProjectScanner",
+    "name": "ProjectScanner",
+    "module": "python.ados.core.project.scanner",
+    "file": "python/ados/core/project/scanner.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "project_name",
+      "count_files",
+      "git_branch",
+      "git_status",
+      "modules",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.engine.loader.EngineLoader",
+    "name": "EngineLoader",
+    "module": "python.ados.engine.loader",
+    "file": "python/ados/engine/loader.py",
+    "line": 8,
+    "bases": [],
+    "methods": [
+      "load"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.state.manager.State",
+    "name": "State",
+    "module": "python.ados.state.manager",
+    "file": "python/ados/state/manager.py",
+    "line": 7,
+    "bases": [],
+    "methods": [
+      "load",
+      "save"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.manager.Knowledge",
+    "name": "Knowledge",
+    "module": "python.ados.knowledge.manager",
+    "file": "python/ados/knowledge/manager.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "folders"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.types.FunctionRecord",
+    "name": "FunctionRecord",
+    "module": "python.ados.knowledge.types",
+    "file": "python/ados/knowledge/types.py",
+    "line": 5,
+    "bases": [],
+    "methods": [],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.knowledge.types.ClassRecord",
+    "name": "ClassRecord",
+    "module": "python.ados.knowledge.types",
+    "file": "python/ados/knowledge/types.py",
+    "line": 19,
+    "bases": [],
+    "methods": [],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.knowledge.types.ModuleRecord",
+    "name": "ModuleRecord",
+    "module": "python.ados.knowledge.types",
+    "file": "python/ados/knowledge/types.py",
+    "line": 31,
+    "bases": [],
+    "methods": [],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.knowledge.types.ImportRecord",
+    "name": "ImportRecord",
+    "module": "python.ados.knowledge.types",
+    "file": "python/ados/knowledge/types.py",
+    "line": 40,
+    "bases": [],
+    "methods": [],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.knowledge.symbol.SymbolExtractor",
+    "name": "SymbolExtractor",
+    "module": "python.ados.knowledge.symbol",
+    "file": "python/ados/knowledge/symbol.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "extract",
+      "_extract_function",
+      "_extract_async_function",
+      "_extract_class",
+      "_extract_import"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.scanner.ProjectScanner",
+    "name": "ProjectScanner",
+    "module": "python.ados.knowledge.scanner",
+    "file": "python/ados/knowledge/scanner.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "scan",
+      "read_file"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.parser.CodeParser",
+    "name": "CodeParser",
+    "module": "python.ados.knowledge.parser",
+    "file": "python/ados/knowledge/parser.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "parse_module",
+      "parse_functions",
+      "parse_classes"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.function.FunctionIndex",
+    "name": "FunctionIndex",
+    "module": "python.ados.knowledge.function",
+    "file": "python/ados/knowledge/function.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "index_file",
+      "search",
+      "to_dict"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.class_index.ClassIndex",
+    "name": "ClassIndex",
+    "module": "python.ados.knowledge.class_index",
+    "file": "python/ados/knowledge/class_index.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "index_file",
+      "search",
+      "to_dict"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.module_index.ModuleIndex",
+    "name": "ModuleIndex",
+    "module": "python.ados.knowledge.module_index",
+    "file": "python/ados/knowledge/module_index.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "index_file",
+      "search",
+      "to_dict"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.import_index.ImportIndex",
+    "name": "ImportIndex",
+    "module": "python.ados.knowledge.import_index",
+    "file": "python/ados/knowledge/import_index.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "index_file",
+      "search",
+      "to_dict"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.graph.DependencyGraph",
+    "name": "DependencyGraph",
+    "module": "python.ados.knowledge.graph",
+    "file": "python/ados/knowledge/graph.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "add_module_dependency",
+      "add_class_dependency",
+      "add_function_dependency",
+      "build_from_imports",
+      "to_dict"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.storage.KnowledgeStorage",
+    "name": "KnowledgeStorage",
+    "module": "python.ados.knowledge.storage",
+    "file": "python/ados/knowledge/storage.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "save",
+      "load",
+      "exists"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.loader.IndexLoader",
+    "name": "IndexLoader",
+    "module": "python.ados.knowledge.loader",
+    "file": "python/ados/knowledge/loader.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "load_all",
+      "load"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.search.SymbolSearcher",
+    "name": "SymbolSearcher",
+    "module": "python.ados.knowledge.search",
+    "file": "python/ados/knowledge/search.py",
+    "line": 8,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "search_symbol",
+      "search_by_type"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.explain.SymbolExplainer",
+    "name": "SymbolExplainer",
+    "module": "python.ados.knowledge.explain",
+    "file": "python/ados/knowledge/explain.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "explain_module",
+      "explain_class",
+      "explain_function"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.context.ContextBuilder",
+    "name": "ContextBuilder",
+    "module": "python.ados.knowledge.context",
+    "file": "python/ados/knowledge/context.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "build_context",
+      "_find_related",
+      "_find_imports",
+      "_find_usages"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.cache.IndexCache",
+    "name": "IndexCache",
+    "module": "python.ados.knowledge.cache",
+    "file": "python/ados/knowledge/cache.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "get",
+      "set",
+      "clear"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.builder.IndexBuilder",
+    "name": "IndexBuilder",
+    "module": "python.ados.knowledge.builder",
+    "file": "python/ados/knowledge/builder.py",
+    "line": 11,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "build"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.dependency_graph.DependencyGraph",
+    "name": "DependencyGraph",
+    "module": "python.ados.knowledge.dependency_graph",
+    "file": "python/ados/knowledge/dependency_graph.py",
+    "line": 3,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "add_module_dependency",
+      "add_class_dependency",
+      "add_function_dependency",
+      "build_from_imports",
+      "to_dict"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.indexerthon_indexer.PythonIndexer",
+    "name": "PythonIndexer",
+    "module": "python.ados.knowledge.indexerthon_indexer",
+    "file": "python/ados/knowledge/indexer/python_indexer.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "index"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.indexer.project_index.ProjectIndexer",
+    "name": "ProjectIndexer",
+    "module": "python.ados.knowledge.indexer.project_index",
+    "file": "python/ados/knowledge/indexer/project_index.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "scan",
+      "save"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.indexer.indexer.SourceIndexer",
+    "name": "SourceIndexer",
+    "module": "python.ados.knowledge.indexer.indexer",
+    "file": "python/ados/knowledge/indexer/indexer.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "build"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.context.context.AgentContext",
+    "name": "AgentContext",
+    "module": "python.ados.knowledge.context.context",
+    "file": "python/ados/knowledge/context/context.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "to_dict"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.context.context_engine.ContextEngine",
+    "name": "ContextEngine",
+    "module": "python.ados.knowledge.context.context_engine",
+    "file": "python/ados/knowledge/context/context_engine.py",
+    "line": 7,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "build",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.graph.task_graph.TaskGraph",
+    "name": "TaskGraph",
+    "module": "python.ados.knowledge.graph.task_graph",
+    "file": "python/ados/knowledge/graph/task_graph.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "add_task",
+      "connect",
+      "children",
+      "tasks"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.graph.__init__.DependencyGraph",
+    "name": "DependencyGraph",
+    "module": "python.ados.knowledge.graph.__init__",
+    "file": "python/ados/knowledge/graph/__init__.py",
+    "line": 3,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "add_module_dependency",
+      "add_class_dependency",
+      "add_function_dependency",
+      "build_from_imports",
+      "to_dict"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.graph.dependency_graph.DependencyGraph",
+    "name": "DependencyGraph",
+    "module": "python.ados.knowledge.graph.dependency_graph",
+    "file": "python/ados/knowledge/graph/dependency_graph.py",
+    "line": 6,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "build",
+      "modules",
+      "imports",
+      "size"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.graph.reverse_dependency.ReverseDependencyGraph",
+    "name": "ReverseDependencyGraph",
+    "module": "python.ados.knowledge.graph.reverse_dependency",
+    "file": "python/ados/knowledge/graph/reverse_dependency.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "build",
+      "imported_by",
+      "modules",
+      "size"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.repository.analyzer.RepositoryAnalyzer",
+    "name": "RepositoryAnalyzer",
+    "module": "python.ados.knowledge.repository.analyzer",
+    "file": "python/ados/knowledge/repository/analyzer.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "analyze"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.repository.knowledge.RepositoryKnowledge",
+    "name": "RepositoryKnowledge",
+    "module": "python.ados.knowledge.repository.knowledge",
+    "file": "python/ados/knowledge/repository/knowledge.py",
+    "line": 8,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "build",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.workspace.workspace.Workspace",
+    "name": "Workspace",
+    "module": "python.ados.knowledge.workspace.workspace",
+    "file": "python/ados/knowledge/workspace/workspace.py",
+    "line": 6,
+    "bases": [],
+    "methods": [
+      "scan"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.workspace.scanner.WorkspaceScanner",
+    "name": "WorkspaceScanner",
+    "module": "python.ados.knowledge.workspace.scanner",
+    "file": "python/ados/knowledge/workspace/scanner.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "scan"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.knowledge.intelligence.repository.RepositoryIntelligence",
+    "name": "RepositoryIntelligence",
+    "module": "python.ados.knowledge.intelligence.repository",
+    "file": "python/ados/knowledge/intelligence/repository.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "summary",
+      "callers",
+      "modules",
+      "imports"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.research.model.Repository",
+    "name": "Repository",
+    "module": "python.ados.research.model",
+    "file": "python/ados/research/model.py",
+    "line": 4,
+    "bases": [],
+    "methods": [],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.research.providers.github.Github",
+    "name": "Github",
+    "module": "python.ados.research.providers.github",
+    "file": "python/ados/research/providers/github.py",
+    "line": 3,
+    "bases": [],
+    "methods": [
+      "repository"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.research.models.repository.Repository",
+    "name": "Repository",
+    "module": "python.ados.research.models.repository",
+    "file": "python/ados/research/models/repository.py",
+    "line": 4,
+    "bases": [],
+    "methods": [],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.kernel.event_bus.EventBus",
+    "name": "EventBus",
+    "module": "python.ados.kernel.event_bus",
+    "file": "python/ados/kernel/event_bus.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "subscribe",
+      "publish"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.kernel.container.ServiceContainer",
+    "name": "ServiceContainer",
+    "module": "python.ados.kernel.container",
+    "file": "python/ados/kernel/container.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register",
+      "unregister",
+      "get",
+      "has",
+      "list"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.kernel.kernel.ADOSKernel",
+    "name": "ADOSKernel",
+    "module": "python.ados.kernel.kernel",
+    "file": "python/ados/kernel/kernel.py",
+    "line": 14,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "info"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.kernel.agent_runtime.AgentRuntime",
+    "name": "AgentRuntime",
+    "module": "python.ados.kernel.agent_runtime",
+    "file": "python/ados/kernel/agent_runtime.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "run",
+      "list"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.kernel.database.symbol_db.SymbolDatabase",
+    "name": "SymbolDatabase",
+    "module": "python.ados.kernel.database.symbol_db",
+    "file": "python/ados/kernel/database/symbol_db.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "load",
+      "all",
+      "find_type",
+      "find_name",
+      "count"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.capability.manager.CapabilityManager",
+    "name": "CapabilityManager",
+    "module": "python.ados.capability.manager",
+    "file": "python/ados/capability/manager.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register",
+      "unregister",
+      "get",
+      "list"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.reasoner.CodeReasoner",
+    "name": "CodeReasoner",
+    "module": "python.ados.reasoning.reasoner",
+    "file": "python/ados/reasoning/reasoner.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "analyze",
+      "risk"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.impact.ChangeImpactAnalyzer",
+    "name": "ChangeImpactAnalyzer",
+    "module": "python.ados.reasoning.impact",
+    "file": "python/ados/reasoning/impact.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "analyze"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.impact_propagation.ImpactPropagationEngine",
+    "name": "ImpactPropagationEngine",
+    "module": "python.ados.reasoning.impact_propagation",
+    "file": "python/ados/reasoning/impact_propagation.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "analyze"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.architecture.ArchitectureAnalyzer",
+    "name": "ArchitectureAnalyzer",
+    "module": "python.ados.reasoning.architecture",
+    "file": "python/ados/reasoning/architecture.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "analyze",
+      "hotspots",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.cycles.CircularDependencyDetector",
+    "name": "CircularDependencyDetector",
+    "module": "python.ados.reasoning.cycles",
+    "file": "python/ados/reasoning/cycles.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "detect",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.review.RepositoryReviewEngine",
+    "name": "RepositoryReviewEngine",
+    "module": "python.ados.reasoning.review",
+    "file": "python/ados/reasoning/review.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "review",
+      "hotspots",
+      "orphan_modules",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.deadcode.DeadCodeDetector",
+    "name": "DeadCodeDetector",
+    "module": "python.ados.reasoning.deadcode",
+    "file": "python/ados/reasoning/deadcode.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "detect",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.unused_imports.UnusedImportDetector",
+    "name": "UnusedImportDetector",
+    "module": "python.ados.reasoning.unused_imports",
+    "file": "python/ados/reasoning/unused_imports.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "detect",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.smells.CodeSmellDetector",
+    "name": "CodeSmellDetector",
+    "module": "python.ados.reasoning.smells",
+    "file": "python/ados/reasoning/smells.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "detect",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.complexity.ComplexityAnalyzer",
+    "name": "ComplexityAnalyzer",
+    "module": "python.ados.reasoning.complexity",
+    "file": "python/ados/reasoning/complexity.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "_complexity",
+      "analyze",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.maintainability.MaintainabilityAnalyzer",
+    "name": "MaintainabilityAnalyzer",
+    "module": "python.ados.reasoning.maintainability",
+    "file": "python/ados/reasoning/maintainability.py",
+    "line": 6,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "_complexity",
+      "analyze",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.health.RepositoryHealthAnalyzer",
+    "name": "RepositoryHealthAnalyzer",
+    "module": "python.ados.reasoning.health",
+    "file": "python/ados/reasoning/health.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "analyze"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.technical_debt.TechnicalDebtAnalyzer",
+    "name": "TechnicalDebtAnalyzer",
+    "module": "python.ados.reasoning.technical_debt",
+    "file": "python/ados/reasoning/technical_debt.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "analyze",
+      "summary"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.planner.planner.Planner",
+    "name": "Planner",
+    "module": "python.ados.reasoning.planner.planner",
+    "file": "python/ados/reasoning/planner/planner.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "plan"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.reflection.reflector.Reflector",
+    "name": "Reflector",
+    "module": "python.ados.reasoning.reflection.reflector",
+    "file": "python/ados/reasoning/reflection/reflector.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "evaluate"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.objective.objective.Objective",
+    "name": "Objective",
+    "module": "python.ados.reasoning.objective.objective",
+    "file": "python/ados/reasoning/objective/objective.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__post_init__"
+    ],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.reasoning.agent.base.Agent",
+    "name": "Agent",
+    "module": "python.ados.reasoning.agent.base",
+    "file": "python/ados/reasoning/agent/base.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.agent.registry.AgentRegistry",
+    "name": "AgentRegistry",
+    "module": "python.ados.reasoning.agent.registry",
+    "file": "python/ados/reasoning/agent/registry.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register",
+      "get",
+      "list"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.agent.manager.AgentManager",
+    "name": "AgentManager",
+    "module": "python.ados.reasoning.agent.manager",
+    "file": "python/ados/reasoning/agent/manager.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register",
+      "get",
+      "list",
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.agent.loader.AgentLoader",
+    "name": "AgentLoader",
+    "module": "python.ados.reasoning.agent.loader",
+    "file": "python/ados/reasoning/agent/loader.py",
+    "line": 9,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "load"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.agents.planner.PlannerAgent",
+    "name": "PlannerAgent",
+    "module": "python.ados.reasoning.agents.planner",
+    "file": "python/ados/reasoning/agents/planner.py",
+    "line": 5,
+    "bases": [
+      "Agent"
+    ],
+    "methods": [
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.agents.knowledge.KnowledgeAgent",
+    "name": "KnowledgeAgent",
+    "module": "python.ados.reasoning.agents.knowledge",
+    "file": "python/ados/reasoning/agents/knowledge.py",
+    "line": 4,
+    "bases": [
+      "Agent"
+    ],
+    "methods": [
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reasoning.orchestrator.orchestrator.Orchestrator",
+    "name": "Orchestrator",
+    "module": "python.ados.reasoning.orchestrator.orchestrator",
+    "file": "python/ados/reasoning/orchestrator/orchestrator.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register",
+      "get",
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.tool.registry.ToolRegistry",
+    "name": "ToolRegistry",
+    "module": "python.ados.tool.registry",
+    "file": "python/ados/tool/registry.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register",
+      "unregister",
+      "get",
+      "list"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.tool.executor.ToolExecutor",
+    "name": "ToolExecutor",
+    "module": "python.ados.tool.executor",
+    "file": "python/ados/tool/executor.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "execute"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.queue.task_queue.TaskQueue",
+    "name": "TaskQueue",
+    "module": "python.ados.queue.task_queue",
+    "file": "python/ados/queue/task_queue.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "push",
+      "pop",
+      "pending",
+      "empty",
+      "list"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.resolver.dependency.DependencyResolver",
+    "name": "DependencyResolver",
+    "module": "python.ados.resolver.dependency",
+    "file": "python/ados/resolver/dependency.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "complete",
+      "ready"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.executor.TaskExecutor",
+    "name": "TaskExecutor",
+    "module": "python.ados.execution.executor",
+    "file": "python/ados/execution/executor.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.engine.ExecutionEngine",
+    "name": "ExecutionEngine",
+    "module": "python.ados.execution.engine",
+    "file": "python/ados/execution/engine.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "execute"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.runtime.context.RuntimeContext",
+    "name": "RuntimeContext",
+    "module": "python.ados.execution.runtime.context",
+    "file": "python/ados/execution/runtime/context.py",
+    "line": 5,
+    "bases": [],
+    "methods": [],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.execution.runtime.session.RuntimeSession",
+    "name": "RuntimeSession",
+    "module": "python.ados.execution.runtime.session",
+    "file": "python/ados/execution/runtime/session.py",
+    "line": 6,
+    "bases": [],
+    "methods": [],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.execution.runtime.memory.RuntimeMemory",
+    "name": "RuntimeMemory",
+    "module": "python.ados.execution.runtime.memory",
+    "file": "python/ados/execution/runtime/memory.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "put",
+      "get",
+      "delete",
+      "clear",
+      "keys",
+      "dump"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.runtime.events.EventBus",
+    "name": "EventBus",
+    "module": "python.ados.execution.runtime.events",
+    "file": "python/ados/execution/runtime/events.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "subscribe",
+      "publish",
+      "listeners"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.runtime.scheduler.RuntimeScheduler",
+    "name": "RuntimeScheduler",
+    "module": "python.ados.execution.runtime.scheduler",
+    "file": "python/ados/execution/runtime/scheduler.py",
+    "line": 4,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "schedule",
+      "next",
+      "pending",
+      "clear"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.runtime.integration.RuntimeIntegration",
+    "name": "RuntimeIntegration",
+    "module": "python.ados.execution.runtime.integration",
+    "file": "python/ados/execution/runtime/integration.py",
+    "line": 7,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "load_tasks",
+      "execute"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.runtime.objective_runner.ObjectiveRunner",
+    "name": "ObjectiveRunner",
+    "module": "python.ados.execution.runtime.objective_runner",
+    "file": "python/ados/execution/runtime/objective_runner.py",
+    "line": 6,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.runtime.dispatcher.Dispatcher",
+    "name": "Dispatcher",
+    "module": "python.ados.execution.runtime.dispatcher",
+    "file": "python/ados/execution/runtime/dispatcher.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register_route",
+      "register_agent",
+      "dispatch"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.runtime.loop.RuntimeLoop",
+    "name": "RuntimeLoop",
+    "module": "python.ados.execution.runtime.loop",
+    "file": "python/ados/execution/runtime/loop.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.executor.executor.Executor",
+    "name": "Executor",
+    "module": "python.ados.execution.executor.executor",
+    "file": "python/ados/execution/executor/executor.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register",
+      "execute",
+      "list"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.task.task.Task",
+    "name": "Task",
+    "module": "python.ados.execution.task.task",
+    "file": "python/ados/execution/task/task.py",
+    "line": 5,
+    "bases": [],
+    "methods": [],
+    "docstring": null,
+    "decorators": [
+      "dataclass"
+    ]
+  },
+  {
+    "key": "python.ados.execution.pipeline.pipeline.AgentPipeline",
+    "name": "AgentPipeline",
+    "module": "python.ados.execution.pipeline.pipeline",
+    "file": "python/ados/execution/pipeline/pipeline.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "add",
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.plugins.loader.PluginLoader",
+    "name": "PluginLoader",
+    "module": "python.ados.execution.plugins.loader",
+    "file": "python/ados/execution/plugins/loader.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "discover"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.workflow.workflow.Workflow",
+    "name": "Workflow",
+    "module": "python.ados.execution.workflow.workflow",
+    "file": "python/ados/execution/workflow/workflow.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "add",
+      "run"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.execution.integrations.registry.IntegrationRegistry",
+    "name": "IntegrationRegistry",
+    "module": "python.ados.execution.integrations.registry",
+    "file": "python/ados/execution/integrations/registry.py",
+    "line": 7,
+    "bases": [],
+    "methods": [
+      "status",
+      "versions"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.reference.resolver.SymbolReferenceResolver",
+    "name": "SymbolReferenceResolver",
+    "module": "python.ados.reference.resolver",
+    "file": "python/ados/reference/resolver.py",
+    "line": 5,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "build",
+      "symbols",
+      "callers",
+      "count"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.presentation.router.router.AgentRouter",
+    "name": "AgentRouter",
+    "module": "python.ados.presentation.router.router",
+    "file": "python/ados/presentation/router/router.py",
+    "line": 1,
+    "bases": [],
+    "methods": [
+      "__init__",
+      "register",
+      "resolve"
+    ],
+    "docstring": null,
+    "decorators": []
+  },
+  {
+    "key": "python.ados.presentation.api.fastapi_app.PseudocodeRequest",
+    "name": "PseudocodeRequest",
+    "module": "python.ados.presentation.api.fastapi_app",
+    "file": "python/ados/presentation/api/fastapi_app.py",
+    "line": 10,
+    "bases": [
+      "BaseModel"
+    ],
+    "methods": [],
+    "docstring": null,
+    "decorators": []
+  }
+]

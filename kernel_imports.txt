@@ -1,0 +1,7 @@
+python/ados/knowledge/context/context_engine.py:4:from ados.kernel.bootstrap import kernel
+python/ados/knowledge/workspace/workspace.py:4:from ados.kernel.config.config import load_workspace
+python/ados/kernel/test_bus.py:1:from ados.kernel import bus
+python/ados/kernel/test_capability.py:1:import ados.kernel.bootstrap
+python/ados/kernel/test_capability.py:4:from ados.kernel.capability import dump
+python/ados/kernel/test_capability.py:5:from ados.kernel.capability import providers
+python/ados/presentation/router/router.py:62:        from ados.kernel.bootstrap import initialize
