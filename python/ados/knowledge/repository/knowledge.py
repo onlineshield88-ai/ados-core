@@ -1,5 +1,5 @@
 from ados.knowledge.workspace import WorkspaceScanner
-from ados.knowledge.repository import RepositoryAnalyzer
+from .analyzer import RepositoryAnalyzer
 from ados.knowledge.indexer import PythonIndexer
 from ados.knowledge.graph import DependencyGraph
 from ados.reference import SymbolReferenceResolver

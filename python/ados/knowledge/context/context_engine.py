@@ -1,13 +1,13 @@
 from pathlib import Path
 from datetime import datetime
 
-from ados.kernel.bootstrap import kernel
+from ados.core.kernel.kernel import Kernel
 
 
 class ContextEngine:
 
     def __init__(self):
-        self.k = kernel()
+        self.k = Kernel()
 
     def build(self):
 

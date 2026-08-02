@@ -1,6 +1,6 @@
 from ados.reasoning.agent import AgentManager
 from ados.reasoning.agent import AgentLoader
-from ados.execution.execution.runtime import RuntimeIntegration
+from ados.execution.runtime import RuntimeIntegration
 
 
 class ObjectiveRunner:

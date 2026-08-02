@@ -1,40 +1,14 @@
-from typing import Dict, List, Set
+try:
+    from .task_graph import TaskGraph
+except ImportError:
+    pass
 
-class DependencyGraph:
-    def __init__(self):
-        self.modules: Dict[str, List[str]] = {}
-        self.classes: Dict[str, List[str]] = {}
-        self.functions: Dict[str, List[str]] = {}
+try:
+    from .dependency_graph import DependencyGraph
+except ImportError:
+    pass
 
-    def add_module_dependency(self, from_module: str, to_module: str):
-        if from_module not in self.modules:
-            self.modules[from_module] = []
-        if to_module not in self.modules[from_module]:
-            self.modules[from_module].append(to_module)
-
-    def add_class_dependency(self, from_class: str, to_class: str):
-        if from_class not in self.classes:
-            self.classes[from_class] = []
-        if to_class not in self.classes[from_class]:
-            self.classes[from_class].append(to_class)
-
-    def add_function_dependency(self, from_func: str, to_func: str):
-        if from_func not in self.functions:
-            self.functions[from_func] = []
-        if to_func not in self.functions[from_func]:
-            self.functions[from_func].append(to_func)
-
-    def build_from_imports(self, imports: List[Dict]):
-        for imp in imports:
-            module = imp.get('module', '')
-            file = imp.get('file', '')
-            if module and file:
-                file_module = file.replace('/', '.').replace('.py', '')
-                self.add_module_dependency(file_module, module)
-
-    def to_dict(self):
-        return {
-            'modules': self.modules,
-            'classes': self.classes,
-            'functions': self.functions
-        }
+try:
+    from .reverse_dependency import ReverseDependencyGraph
+except ImportError:
+    pass

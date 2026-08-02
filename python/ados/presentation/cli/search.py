@@ -1,4 +1,4 @@
-from ados.knowledge.search.search import SearchEngine
+from ados.knowledge.search import SearchEngine
 
 
 def run(args):
